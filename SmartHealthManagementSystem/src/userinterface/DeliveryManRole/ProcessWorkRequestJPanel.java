@@ -96,7 +96,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         Component component = componentArray[componentArray.length - 1];
         DeliveryManWorkAreaJPanel dwjp = (DeliveryManWorkAreaJPanel) component;
         dwjp.populateTable();
-        
+        System.out.println("hi");
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
