@@ -9,6 +9,6 @@ package Business.Organisation;
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
-public class PatientOrganisation {
+public class PatientOrganisation extends Organisation{
     
 }

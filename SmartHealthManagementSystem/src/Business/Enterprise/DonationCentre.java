@@ -5,10 +5,18 @@
  */
 package Business.Enterprise;
 
+import Business.Customer.Address;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
-public class DonationCentre {
+public class DonationCentre extends Enterprise {
+    
+     
+
+    public DonationCentre(String enterpriseName, Address add) {
+        super(enterpriseName, add);
+    }
     
 }

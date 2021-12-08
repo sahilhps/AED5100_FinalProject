@@ -5,10 +5,16 @@
  */
 package Business.Enterprise;
 
+import Business.Customer.Address;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
-public class Hospital {
+public class Hospital extends Enterprise {
+
+    public Hospital(String enterpriseName, Address add) {
+        super(enterpriseName, add);
+    }
     
 }

@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Business.Enterprise;
+import Business.Customer.Address;
 import Business.Organisation.Organisation;
 import Business.Organisation.OrganisationDirectory;
 //import Business.Organization.OrganizationDirectory;
@@ -14,15 +15,15 @@ import Business.Organisation.OrganisationDirectory;
  */
 public abstract class Enterprise extends Organisation {
     
-//    private EnterpriseType enterpriseType;
-    private OrganisationDirectory organizationDirectory;
+    private String enterpriseName;
+    private Address add;
 //    
 //    public Enterprise(String name, EnterpriseType type) {
 //        super(name);
 //        this.enterpriseType = type;
 //        organizationDirectory = new OrganizationDirectory();
 //    }
-//    
+    
 //    public enum EnterpriseType{
 //        Hospital("Hospital"), Pharmacy("Pharmacy"), Government("Government"),EquipmentManufacturer("Equipment Manufacturer");
 //        
@@ -55,4 +56,25 @@ public abstract class Enterprise extends Organisation {
 //        return getName();
 //    }
 //    
+
+    public Enterprise(String enterpriseName, Address add) {
+        this.enterpriseName = enterpriseName;
+        this.add = add;
+    }
+
+    public String getEnterpriseName() {
+        return enterpriseName;
+    }
+
+    public void setEnterpriseName(String enterpriseName) {
+        this.enterpriseName = enterpriseName;
+    }
+
+    public Address getAdd() {
+        return add;
+    }
+
+    public void setAdd(Address add) {
+        this.add = add;
+    }
 }

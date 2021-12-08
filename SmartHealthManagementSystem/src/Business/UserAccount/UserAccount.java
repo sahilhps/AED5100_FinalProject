@@ -19,11 +19,19 @@ public class UserAccount {
     private Employee employee;
     private Role role;
     private WorkQueue workQueue;
+    private String contactNo;
 
-    public UserAccount() {
-        workQueue = new WorkQueue();
+    public UserAccount(String usr, String pass, Role r, String contactNo) {
+        this.username = usr;
+        this.password = pass;
+        this.role = r;
+        this.contactNo = contactNo;
     }
-    
+
+//    public UserAccount() {
+//        workQueue = new WorkQueue();
+//    }
+//    
     
     
     public String getUsername() {
