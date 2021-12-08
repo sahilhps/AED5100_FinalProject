@@ -33,14 +33,7 @@ public class UserAccountDirectory {
         return null;
     }
     
-    public UserAccount createUserAccount(String username, String password, Role role, String contactNo){
-        UserAccount userAccount = new UserAccount(username, password , role, contactNo);
-//        userAccount.setUsername(username);
-//        userAccount.setPassword(password);
-//        userAccount.setRole(role);
-        userAccountList.add(userAccount);
-        return userAccount;
-    }
+  
     
     public boolean checkIfUsernameIsUnique(String username){
         for (UserAccount ua : userAccountList){
@@ -50,7 +43,12 @@ public class UserAccountDirectory {
         return true;
     }
 
-    public UserAccount createUserAccount(String sysadmin, String sysadmin0, Employee employee, SystemAdminRole systemAdminRole) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      public UserAccount createUserAccount(String username, String password, Role role, String contactNo){
+        UserAccount userAccount = new UserAccount(username, password , role, contactNo);
+//        userAccount.setUsername(username);
+//        userAccount.setPassword(password);
+//        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
     }
 }
