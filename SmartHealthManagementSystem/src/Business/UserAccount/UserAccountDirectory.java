@@ -6,6 +6,7 @@ package Business.UserAccount;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
+import Business.Role.SystemAdminRole;
 import java.util.ArrayList;
 
 /**
@@ -32,12 +33,11 @@ public class UserAccountDirectory {
         return null;
     }
     
-    public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
-        UserAccount userAccount = new UserAccount();
-        userAccount.setUsername(username);
-        userAccount.setPassword(password);
-        userAccount.setEmployee(employee);
-        userAccount.setRole(role);
+    public UserAccount createUserAccount(String username, String password, Role role, String contactNo){
+        UserAccount userAccount = new UserAccount(username, password , role, contactNo);
+//        userAccount.setUsername(username);
+//        userAccount.setPassword(password);
+//        userAccount.setRole(role);
         userAccountList.add(userAccount);
         return userAccount;
     }
@@ -48,5 +48,9 @@ public class UserAccountDirectory {
                 return false;
         }
         return true;
+    }
+
+    public UserAccount createUserAccount(String sysadmin, String sysadmin0, Employee employee, SystemAdminRole systemAdminRole) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
