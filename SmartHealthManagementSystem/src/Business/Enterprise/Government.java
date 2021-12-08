@@ -5,10 +5,21 @@
  */
 package Business.Enterprise;
 
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
 public class Government {
-    
+//    public Government(String name) {
+//        super(name, Enterprise.EnterpriseType.Government);
+//    }
+//
+//    
+//    @Override
+//    public ArrayList<Role> getSupportedRole() {
+//        return null;
+//    }
 }
