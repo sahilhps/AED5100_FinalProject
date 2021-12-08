@@ -6,35 +6,38 @@ package Business.Employee;
 
 /**
  *
- * @author raunak
+ * @author Sahil Sonawane
  */
 public class Employee {
     
-    private String name;
-    private int id;
+    private String empName;
+    private int empId;
     private static int count = 1;
 
     public Employee() {
-        id = count;
+        empId = count;
         count++;
     }
 
-    public int getId() {
-        return id;
+    public String getEmpName() {
+        return empName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmpName(String empName) {
+        this.empName = empName;
     }
 
-    
-    public String getName() {
-        return name;
+    public int getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
     }
 
     @Override
     public String toString() {
-        return name;
+        return empName;
     }
     
     
