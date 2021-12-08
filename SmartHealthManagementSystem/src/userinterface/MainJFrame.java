@@ -4,6 +4,7 @@
  */
 package userinterface;
 
+import Business.Customer.Customer;
 import Business.EcoSystem;
 import Business.DB4OUtil.DB4OUtil;
 
@@ -331,11 +332,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-//
-//        if (Role.getSelectedItem().toString() == "Customer") {
-//            Customer c = system.loginCustomer(txtUsername.getText(), txtPassword.getText());
-//            if (c == null) {
-//                JOptionPane.showMessageDialog(this, "Incorrect credential");
+
+        if (Role.getSelectedItem().toString() == "Customer") {
+            Customer c = system.loginCustomer(txtUsername.getText(), txtPassword.getText());
+            if (c == null) {
+                JOptionPane.showMessageDialog(this, "Incorrect credential");
+            }
 //            } else {
 //                CustomerMainPage cmp = new CustomerMainPage(system, dB4OUtil, c);
 //                this.setContentPane(cmp);
@@ -343,7 +345,7 @@ public class MainJFrame extends javax.swing.JFrame {
 //                this.validate();
 //                return;
 //            }
-//
+
 //        }
 //        if (Role.getSelectedItem().toString() == "Restaurant") {
 //            Restaurant r = system.loginResaturant(txtUsername.getText(), txtPassword.getText());
@@ -385,8 +387,8 @@ public class MainJFrame extends javax.swing.JFrame {
 //            } else {
 //                JOptionPane.showMessageDialog(this, "Incorrect credential");
 //            }
-//        }
-
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed

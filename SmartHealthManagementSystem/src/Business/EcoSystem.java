@@ -6,6 +6,7 @@
 package Business;
 
 
+import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Restaurant.RestaurantDirectory;
@@ -53,5 +54,9 @@ public class EcoSystem extends Organization{
     public boolean checkIfUserIsUnique(String userName){
        //
        return false;
+    }
+
+    public Customer loginCustomer(String text, String text0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
