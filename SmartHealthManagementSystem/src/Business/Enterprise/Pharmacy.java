@@ -5,10 +5,20 @@
  */
 package Business.Enterprise;
 
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
 public class Pharmacy {
-    
+//     public Pharmacy(String name) {
+//        super(name, Enterprise.EnterpriseType.Pharmacy);
+//    }
+// 
+//    @Override
+//    public ArrayList<Role> getSupportedRole() {
+//        return null;
+//    }
 }
