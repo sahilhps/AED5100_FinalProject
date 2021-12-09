@@ -21,7 +21,7 @@ public abstract class Organisation {
 //    private String name;
 //    private WorkQueue workQueue;
 //    private EmployeeDirectory employeeDirectory;
-//    private UserAccountDirectory userAccountDirectory;
+    private UserAccountDirectory userAccountDirectory;
 //    private PatientDirectory patientDirectory; 
 //    private int organizationID;
 //    private static int counter;
@@ -51,9 +51,9 @@ public abstract class Organisation {
 //
 //    public abstract ArrayList<Role> getSupportedRole();
 //    
-//    public UserAccountDirectory getUserAccountDirectory() {
-//        return userAccountDirectory;
-//    }
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
+    }
 //
 //    public PatientDirectory getPatientDirectory() {
 //        return patientDirectory;
