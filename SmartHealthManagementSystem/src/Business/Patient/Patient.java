@@ -20,6 +20,14 @@ public class Patient {
         this.recordHistory = new RecordHistory();
     }
 
+    public RecordHistory getRecordHistory() {
+        return recordHistory;
+    }
+
+    public void setRecordHistory(RecordHistory recordHistory) {
+        this.recordHistory = recordHistory;
+    }
+
     public String getPatientName() {
         return patientName;
     }
