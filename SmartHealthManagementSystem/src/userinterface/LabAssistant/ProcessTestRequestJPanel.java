@@ -73,7 +73,7 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
                 submitResultJButtonActionPerformed(evt);
             }
         });
-        add(submitResultJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, -1, -1));
+        add(submitResultJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -95,7 +95,7 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         request.setTestResult(jTextField1.getText());
         request.setLabStatus("Complete");
-        JOptionPane.showMessageDialog(null, "Success");
+        JOptionPane.showMessageDialog(null, "Test conducted Succesfully");
     }//GEN-LAST:event_submitResultJButtonActionPerformed
 
 
