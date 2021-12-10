@@ -6,7 +6,7 @@
 package Business.Enterprise;
 import Business.Organisation.Organisation;
 import Business.Organisation.OrganisationDirectory;
-//import Business.Organization.OrganizationDirectory;
+//import Business.Organisation.OrganisationDirectory;
 
 /**
  *
@@ -16,14 +16,14 @@ public abstract class Enterprise extends Organisation {
     
     private EnterpriseType enterpriseType;
 //    private String value;
-    private OrganisationDirectory organizationDirectory;
+    private OrganisationDirectory OrganisationDirectory;
     
-//    public Enterprise(String name, EnterpriseType type) {
-//        super(name);
-//        this.enterpriseType = type;
-//        organizationDirectory = new OrganisationDirectory();
-//    }
-//    
+    public Enterprise(String name, EnterpriseType type) {
+        super(name);
+        this.enterpriseType = type;
+        OrganisationDirectory = new OrganisationDirectory();
+    }
+    
     public enum EnterpriseType{
         Hospital("Hospital"), Pharmacy("Pharmacy"), Government("Government"),EquipmentManufacturer("Equipment Manufacturer");
         
@@ -43,17 +43,17 @@ public abstract class Enterprise extends Organisation {
         }
     }
 //
-//    public EnterpriseType getEnterpriseType() {
-//        return enterpriseType;
-//    }
-//
-//    public OrganisationDirectory getOrganizationDirectory() {
-//        return organizationDirectory;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return getName();
-//    }
+    public EnterpriseType getEnterpriseType() {
+        return enterpriseType;
+    }
+
+    public OrganisationDirectory getOrganisationDirectory() {
+        return OrganisationDirectory;
+    }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
     
 }

@@ -5,10 +5,23 @@
  */
 package Business.Organisation;
 
+import Business.Role.PatientRole;
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
-public class PatientOrganisation {
+public class PatientOrganisation extends Organisation {
+      public PatientOrganisation() {
+        super(Organisation.Type.Patient.getValue());
+    }
     
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList<>();
+        roles.add(new PatientRole());
+        return roles;
+    }
 }
