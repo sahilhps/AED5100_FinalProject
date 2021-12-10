@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author User
+ * @author mitishah
  */
 public class DoctorHomePageJPanel extends javax.swing.JPanel {
 

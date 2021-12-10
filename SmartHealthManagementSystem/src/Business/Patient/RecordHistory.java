@@ -9,10 +9,14 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Sahil Sonawane <your.name at your.org>
+ * @author dongyueli
  */
-class RecordHistory {
-     private ArrayList<Record> recordList;
+public class RecordHistory {
+    private ArrayList<Record> recordList;
+    
+    public RecordHistory(){
+        this.recordList = new ArrayList<>();
+    }
 
     public ArrayList<Record> getRecordList() {
         return recordList;
@@ -21,9 +25,8 @@ class RecordHistory {
     public void setRecordList(ArrayList<Record> recordList) {
         this.recordList = recordList;
     }
-    public RecordHistory(){
-        this.recordList = new ArrayList<>();
-    }
+
+    
     
     public Record addRecord(){
         Record record = new Record();
