@@ -54,12 +54,12 @@ public class RegisterRequest {
         this.name = name;
     }
 
-    public Organisation getOrganization() {
-        return organization;
+    public Organisation getOrganisation() {
+        return Organisation;
     }
 
-    public void setOrganization(Organisation organization) {
-        this.organization = organization;
+    public void setOrganisation(Organisation Organisation) {
+        this.Organisation = Organisation;
     }
 
     public String getApproveOrNot() {
@@ -105,7 +105,7 @@ public class RegisterRequest {
     private String password;
     private Employee registerdoctor;
     private String name;
-    private Organisation organization;
+    private Organisation Organisation;
     private String approveOrNot;
     private Patient registerpatient;
     private Enterprise enterprise;

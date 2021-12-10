@@ -9,54 +9,57 @@ package Business;
 import Business.Customer.Customer;
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
+import Business.Network.Network;
 import Business.Restaurant.RestaurantDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import java.util.ArrayList;
+import Business.Organisation.Organisation;
 
 /**
  *
  * @author MyPC1
  */
-public class EcoSystem extends Organization{
+public class EcoSystem extends Organisation{
     
-    private static EcoSystem business;
-    private RestaurantDirectory restaurantDirectory;
-    private CustomerDirectory customerDirectory;
-    private DeliveryManDirectory deliveryManDirectory;
-
-    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory) {
-
-        this.restaurantDirectory = restaurantDirectory;
-        this.customerDirectory = customerDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
-    }
+    private static EcoSystem ecoSystem;
+    private ArrayList<Network> networkList;
     
+
     public static EcoSystem getInstance(){
-        if(business==null){
-            business=new EcoSystem();
+        if(ecoSystem == null){
+            ecoSystem = new EcoSystem();
         }
-        return business;
-    }
-    
-    @Override
-    public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> roleList=new ArrayList<Role>();
-        roleList.add(new SystemAdminRole());
-        return roleList;
+          return ecoSystem;
     }
     private EcoSystem(){
         super(null);
-       // networkList=new ArrayList<Network>();
+        networkList  = new ArrayList<>();
     }
 
-    
-    public boolean checkIfUserIsUnique(String userName){
-       //
-       return false;
+    public static EcoSystem getBusiness() {     
+        return ecoSystem;
     }
 
-    public Customer loginCustomer(String text, String text0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    public ArrayList<Network> getNetworkList() {
+        return networkList;
+    }
+
+  
+    public Network createAndAddNetwork(){
+        Network network = new Network();
+        networkList.add(network);
+        return network;
+    }
+
+    @Override
+    public ArrayList<Role> getSupportedRole() {      
+        ArrayList <Role> roleList = new ArrayList<>();
+        roleList.add(new SystemAdminRole());
+        return roleList;
+    }
+    public Customer loginCustomer(String usr,String pass){
+        return CustomerDirectory.loginCustomer(usr,pass);
     }
 }

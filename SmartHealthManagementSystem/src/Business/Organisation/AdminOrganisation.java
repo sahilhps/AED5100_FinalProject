@@ -5,10 +5,23 @@
  */
 package Business.Organisation;
 
+import Business.Role.AdminRole;
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author Sahil Sonawane <your.name at your.org>
  */
-public class AdminOrganisation {
+public class AdminOrganisation extends Organisation{
+    public AdminOrganisation() {
+        super(Type.Admin.getValue());
+    }
     
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList<>();
+        roles.add(new AdminRole());
+        return roles;
+    }
 }
