@@ -17,6 +17,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import userinterface.Register.RegisterJPanel;
 
 /**
  *
@@ -258,87 +259,87 @@ public class MainJFrame1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         // Get user name
-//        String userName = userNameJTextField.getText();
+        String userName = userNameJTextField.getText();
 //        // Get Password
-//        char[] passwordCharArray = passwordJField.getPassword();
-//        String password = String.valueOf(passwordCharArray);
+        char[] passwordCharArray = passwordJField.getPassword();
+        String password = String.valueOf(passwordCharArray);
 //
 //        //Step1: Check in the system user account directory if you have the user
-//        UserAccount userAccount = system.getUserAccountDirectory().authenticateUser(userName, password);
-//        Enterprise inEnterprise = null;
-//        Organisation inOrganization = null;
-//        if (userAccount == null) {
-//            //Step2: Go inside each network to check each enterprise
-//            for (Network network : system.getNetworkList()) {
-//                //Step 2-a: Check against each enterprise
-//                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-//                    userAccount = enterprise.getUserAccountDirectory().authenticateUser(userName, password);
-//                    if (userAccount == null) {
-//                        //Step3: Check against each organization inside that enterprise
-//                        for (Organisation organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-//                            userAccount = organization.getUserAccountDirectory().authenticateUser(userName, password);
-//                            if (userAccount != null) {
-//                                inEnterprise = enterprise;
-//                                inOrganization = organization;
-//                                break;
-//                            }
-//                        }
-//                    } else {
-//                        inEnterprise = enterprise;
-//                        break;
-//                    }
-//                    if (inOrganization != null) {
-//                        break;
-//                    }
-//                }
-//                if (inEnterprise != null) {
-//                    break;
-//                }
-//            }
-//        }
+        UserAccount userAccount = system.getUserAccountDirectory().authenticateUser(userName, password);
+        Enterprise inEnterprise = null;
+        Organisation inOrganization = null;
+        if (userAccount == null) {
+            //Step2: Go inside each network to check each enterprise
+            for (Network network : system.getNetworkList()) {
+                //Step 2-a: Check against each enterprise
+                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                    userAccount = enterprise.getUserAccountDirectory().authenticateUser(userName, password);
+                    if (userAccount == null) {
+                        //Step3: Check against each organization inside that enterprise
+                        for (Organisation organization : enterprise.getOrganisationDirectory().getOrganizationList()) {
+                            userAccount = organization.getUserAccountDirectory().authenticateUser(userName, password);
+                            if (userAccount != null) {
+                                inEnterprise = enterprise;
+                                inOrganization = organization;
+                                break;
+                            }
+                        }
+                    } else {
+                        inEnterprise = enterprise;
+                        break;
+                    }
+                    if (inOrganization != null) {
+                        break;
+                    }
+                }
+                if (inEnterprise != null) {
+                    break;
+                }
+            }
+        }
 
-//        if (userAccount == null) {
-//            JOptionPane.showMessageDialog(null, "The username and password is invalid!");
-//            return;
-//        } else {
-//            CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//            userProcessContainer.add("workArea", userAccount.getRole().createWorkArea(userProcessContainer, userAccount, inOrganization, inEnterprise, system));
-//            layout.next(userProcessContainer);
-//        }
-//        loginJButton.setEnabled(false);
-//        logoutJButton.setEnabled(true);
-//        registerJButton.setEnabled(false);
-//        userNameJTextField.setEnabled(false);
-//        passwordJField.setEnabled(false);
+        if (userAccount == null) {
+            JOptionPane.showMessageDialog(null, "The username and password is invalid!");
+            return;
+        } else {
+            CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+            userProcessContainer.add("workArea", userAccount.getRole().createWorkArea(userProcessContainer, userAccount, inOrganization, inEnterprise, system));
+            layout.next(userProcessContainer);
+        }
+        loginJButton.setEnabled(false);
+        logoutJButton.setEnabled(true);
+        registerJButton.setEnabled(false);
+        userNameJTextField.setEnabled(false);
+        passwordJField.setEnabled(false);
                                                 
         
     }//GEN-LAST:event_loginJButtonActionPerformed
 
     private void logoutJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutJButtonActionPerformed
         // TODO add your handling code here:
-//        logoutJButton.setEnabled(false);
-//        userNameJTextField.setEnabled(true);
-//        passwordJField.setEnabled(true);
-//        loginJButton.setEnabled(true);
-//        registerJButton.setEnabled(true);
-//
-//        userNameJTextField.setText("");
-//        passwordJField.setText("");
-//
-//        userProcessContainer.removeAll();
-//        JPanel blankJP = new JPanel();
-//        userProcessContainer.add("blank", blankJP);
-//        CardLayout crdLyt = (CardLayout) userProcessContainer.getLayout();
-//        crdLyt.next(userProcessContainer);
-//        dB4OUtil.storeSystem(system);
+        logoutJButton.setEnabled(false);
+        userNameJTextField.setEnabled(true);
+        passwordJField.setEnabled(true);
+        loginJButton.setEnabled(true);
+        registerJButton.setEnabled(true);
+
+        userNameJTextField.setText("");
+        passwordJField.setText("");
+
+        userProcessContainer.removeAll();
+        JPanel blankJP = new JPanel();
+        userProcessContainer.add("blank", blankJP);
+        CardLayout crdLyt = (CardLayout) userProcessContainer.getLayout();
+        crdLyt.next(userProcessContainer);
+        dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_logoutJButtonActionPerformed
 
     private void registerJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerJButtonActionPerformed
         // TODO add your handling code here:
-//        RegisterJPanel registerJPanel = new RegisterJPanel(userProcessContainer, system);
-//        CardLayout crdLyt = (CardLayout) userProcessContainer.getLayout();
-//        userProcessContainer.add("RegisterJPanel", registerJPanel);
-//        crdLyt.next(userProcessContainer);
+        RegisterJPanel registerJPanel = new RegisterJPanel(userProcessContainer, system);
+        CardLayout crdLyt = (CardLayout) userProcessContainer.getLayout();
+        userProcessContainer.add("RegisterJPanel", registerJPanel);
+        crdLyt.next(userProcessContainer);
  
     }//GEN-LAST:event_registerJButtonActionPerformed
 

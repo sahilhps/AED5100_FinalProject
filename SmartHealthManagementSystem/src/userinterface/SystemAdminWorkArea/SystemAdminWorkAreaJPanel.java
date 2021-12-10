@@ -7,7 +7,7 @@ package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
 
-import Business.Organization;
+import Business.Organisation.Organisation;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JPanel;
