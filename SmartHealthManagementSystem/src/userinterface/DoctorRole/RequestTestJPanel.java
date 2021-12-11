@@ -91,7 +91,7 @@ public class RequestTestJPanel extends javax.swing.JPanel {
         jLabel13.setText("LAB TEST REQUEST");
         jPanel1.add(jLabel13);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 560, 60));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 560, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

@@ -79,7 +79,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, -1, 40));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 310, -1, 30));
 
         backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -90,7 +90,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel2.setText("Quantity");
