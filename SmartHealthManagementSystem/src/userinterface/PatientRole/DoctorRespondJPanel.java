@@ -72,19 +72,17 @@ public class DoctorRespondJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         backJButton = new javax.swing.JButton();
         viewDetailsJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Respond From Doctor");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 280, -1));
-
+        jTable1.setBackground(new java.awt.Color(167, 221, 214));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -107,23 +105,38 @@ public class DoctorRespondJPanel extends javax.swing.JPanel {
             jTable1.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, 115));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, -1, 115));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, -1, -1));
 
+        viewDetailsJButton.setBackground(new java.awt.Color(0, 24, 91));
+        viewDetailsJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        viewDetailsJButton.setForeground(new java.awt.Color(255, 255, 255));
         viewDetailsJButton.setText("View Detatils");
         viewDetailsJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewDetailsJButtonActionPerformed(evt);
             }
         });
-        add(viewDetailsJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, -1, -1));
+        add(viewDetailsJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel9.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("RESPONSE FROM DOCTOR");
+        jPanel1.add(jLabel9);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 530, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -153,7 +166,8 @@ public class DoctorRespondJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton viewDetailsJButton;

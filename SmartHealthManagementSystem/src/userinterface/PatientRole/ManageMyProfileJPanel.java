@@ -46,41 +46,54 @@ public class ManageMyProfileJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel9 = new javax.swing.JLabel();
         createMyProfileJButton = new javax.swing.JButton();
         viewUpdateMyProfileJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("Manage My Profile");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 58, 241, -1));
-
+        createMyProfileJButton.setBackground(new java.awt.Color(167, 221, 214));
+        createMyProfileJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         createMyProfileJButton.setText("Create My Profile");
         createMyProfileJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createMyProfileJButtonActionPerformed(evt);
             }
         });
-        add(createMyProfileJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 210, -1));
+        add(createMyProfileJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 210, -1));
 
+        viewUpdateMyProfileJButton.setBackground(new java.awt.Color(167, 221, 214));
+        viewUpdateMyProfileJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         viewUpdateMyProfileJButton.setText("View and Update My Profile");
         viewUpdateMyProfileJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewUpdateMyProfileJButtonActionPerformed(evt);
             }
         });
-        add(viewUpdateMyProfileJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 205, 212, -1));
+        add(viewUpdateMyProfileJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 250, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 285, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel10.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("MANAGE MY PROFILE");
+        jPanel1.add(jLabel10);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 530, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -110,7 +123,8 @@ public class ManageMyProfileJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton createMyProfileJButton;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton viewUpdateMyProfileJButton;
     // End of variables declaration//GEN-END:variables
 }
