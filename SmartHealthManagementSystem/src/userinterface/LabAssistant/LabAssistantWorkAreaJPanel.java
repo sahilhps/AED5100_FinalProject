@@ -8,7 +8,12 @@ package userinterface.LabAssistant;
 import Business.Enterprise.Enterprise;
 import Business.Organisation.LabOrganisation;
 import Business.UserAccount.UserAccount;
+import Business.WorkQueue.PatientDoctorWorkRequest;
+import Business.WorkQueue.WorkRequest;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -19,9 +24,9 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public LabAssistantWorkAreaJPanel() {
-        initComponents();
-    }
+//    public LabAssistantWorkAreaJPanel() {
+//        initComponents();
+//    }
      private JPanel userProcessContainer;
     private Enterprise enterprise;
     private UserAccount userAccount;
@@ -35,7 +40,27 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         this.userAccount = account;
         this.organization = (LabOrganisation)organization;
         this.enterprise = enterprise;
-//        populateTable();
+        populateTable();
+    }
+    public void populateTable(){
+        DefaultTableModel model = (DefaultTableModel)testRequestJTable.getModel();
+        
+        model.setRowCount(0);
+        
+        for(WorkRequest request : organization.getWorkQueue().getWorkRequestList()){
+            PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) request;
+            Object[] row = new Object[6];
+            patientDoctorWorkRequest.setDate();
+            row[0] = patientDoctorWorkRequest;
+            row[1] = patientDoctorWorkRequest.getMessage();
+            row[2] = patientDoctorWorkRequest.getSender().getEmployee().getEmpName();
+            row[3] = patientDoctorWorkRequest.getReceiver() == null ? null : patientDoctorWorkRequest.getReceiver().getName();
+            row[4] = patientDoctorWorkRequest.getLabStatus();
+            String result = ((PatientDoctorWorkRequest) patientDoctorWorkRequest).getTestResult();
+            row[5] = result == null ? "Waiting" : result;
+            
+            model.addRow(row);
+        }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,19 +71,154 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        testRequestJTable = new javax.swing.JTable();
+        jLabel12 = new javax.swing.JLabel();
+        assignToMeJButton = new javax.swing.JButton();
+        processJButton = new javax.swing.JButton();
+        refreshJButton = new javax.swing.JButton();
+
+        testRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Timestamp", "Message", "Sender", "Receiver", "Status", "Result"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(testRequestJTable);
+
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel12.setText("Lab Assistant Work Area");
+
+        assignToMeJButton.setText("Assign To Me");
+        assignToMeJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                assignToMeJButtonActionPerformed(evt);
+            }
+        });
+
+        processJButton.setText("Process");
+        processJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                processJButtonActionPerformed(evt);
+            }
+        });
+
+        refreshJButton.setText("Refresh");
+        refreshJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refreshJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 930, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(270, 270, 270)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(154, 154, 154)
+                            .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 930, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(210, 210, 210)
+                            .addComponent(assignToMeJButton)
+                            .addGap(275, 275, 275)
+                            .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(10, 10, 10)
+                            .addComponent(jLabel12))
+                        .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(28, 28, 28)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(28, 28, 28)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(assignToMeJButton)
+                        .addComponent(processJButton))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = testRequestJTable.getSelectedRow();
+
+        if (selectedRow < 0){
+            JOptionPane.showMessageDialog(null, "please select one row");
+        }else{
+
+            PatientDoctorWorkRequest request = (PatientDoctorWorkRequest)testRequestJTable.getValueAt(selectedRow,0);
+            request.setReceiver(userAccount);
+            request.setLabStatus("Pending");
+            populateTable();
+            JOptionPane.showMessageDialog(null, "Success");
+        }
+    }//GEN-LAST:event_assignToMeJButtonActionPerformed
+
+    private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = testRequestJTable.getSelectedRow();
+
+        if (selectedRow < 0){
+            JOptionPane.showMessageDialog(null, "please select one row");
+        }
+
+        PatientDoctorWorkRequest request = (PatientDoctorWorkRequest)testRequestJTable.getValueAt(selectedRow, 0);
+
+        request.setLabStatus("Processing");
+
+        ProcessTestRequestJPanel processWorkRequestJPanel = new ProcessTestRequestJPanel(userProcessContainer, request);
+        userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_processJButtonActionPerformed
+
+    private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
+        populateTable();
+    }//GEN-LAST:event_refreshJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton assignToMeJButton;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton processJButton;
+    private javax.swing.JButton refreshJButton;
+    private javax.swing.JTable testRequestJTable;
     // End of variables declaration//GEN-END:variables
 }

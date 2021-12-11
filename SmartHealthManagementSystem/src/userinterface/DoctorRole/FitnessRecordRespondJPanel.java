@@ -36,8 +36,7 @@ public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
 //        this.organization = (DoctorOrganization)organization;
         this.enterprise = enterprise;
-//        this.userAccount = account;
-//        this.ecoSystem = ecoSystem;
+
         this.patientDoctorWorkRequest = patientDoctorWorkRequest;
         
         
