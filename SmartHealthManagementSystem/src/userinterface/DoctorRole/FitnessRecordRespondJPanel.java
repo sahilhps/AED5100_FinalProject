@@ -51,40 +51,53 @@ public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         respondJTextArea = new javax.swing.JTextArea();
         backJButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(230, 196, 146));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Respond To Patient");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 41, 280, -1));
 
         respondJTextArea.setColumns(20);
         respondJTextArea.setRows(5);
         jScrollPane1.setViewportView(respondJTextArea);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 89, 306, 119));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 306, 119));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 261, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(0, 24, 91));
+        jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Save");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(276, 226, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel13.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel13.setFont(new java.awt.Font("Lucida Grande", 3, 30)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("RESPOND TO PATIENT");
+        jPanel1.add(jLabel13);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 560, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -133,7 +146,8 @@ public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea respondJTextArea;
     // End of variables declaration//GEN-END:variables

@@ -55,42 +55,57 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         quantityJTextField = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
         requestTestJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         drugNameJTextField = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(230, 196, 146));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel1.setText("Drug Name");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
-        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 121, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, -1, -1));
+        add(quantityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, 100, -1));
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Request Drug");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
-
+        requestTestJButton.setBackground(new java.awt.Color(0, 24, 91));
+        requestTestJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         requestTestJButton.setText("Add");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, -1, 40));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel2.setText("Quantity");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, -1));
-        add(drugNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 108, 121, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
+        add(drugNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 210, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel13.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel13.setFont(new java.awt.Font("Lucida Grande", 3, 30)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText(" DRUG ORDER REQUEST");
+        jPanel1.add(jLabel13);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 560, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
@@ -156,8 +171,9 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JTextField drugNameJTextField;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField quantityJTextField;
     private javax.swing.JButton requestTestJButton;
     // End of variables declaration//GEN-END:variables
