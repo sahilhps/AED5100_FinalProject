@@ -109,11 +109,12 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
 
         backJButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new java.awt.BorderLayout());
 
-        backJButton.setBackground(new java.awt.Color(204, 255, 255));
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(0, 102, 255));
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         backJButton.setOpaque(true);

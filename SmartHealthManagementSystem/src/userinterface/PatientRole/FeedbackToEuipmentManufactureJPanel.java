@@ -79,7 +79,6 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
         buttonGroup4 = new javax.swing.ButtonGroup();
-        jLabel9 = new javax.swing.JLabel();
         sentJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -106,40 +105,41 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         viewFeedbackFromEquipmentManufactureJTable = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("Feedback");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 17, 124, -1));
-
+        sentJButton.setBackground(new java.awt.Color(0, 24, 91));
+        sentJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        sentJButton.setForeground(new java.awt.Color(255, 255, 255));
         sentJButton.setText("Send Feedback");
         sentJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sentJButtonActionPerformed(evt);
             }
         });
-        add(sentJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 497, -1, -1));
+        add(sentJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 560, -1, -1));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 472, -1, -1));
 
         jLabel3.setText("We welcome problem reports, feature ideas and general comments.");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 384, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
 
         feedbackJTextArea.setColumns(20);
         feedbackJTextArea.setRows(5);
         jScrollPane1.setViewportView(feedbackJTextArea);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 418, 422, 67));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, 422, 67));
 
         jLabel4.setText("1. What do you think of the design of our products?");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 99, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, -1, -1));
 
         jLabel5.setText("Please evaluate our products by selecting one of the options for each question.   ");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 65, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
 
         jLabel6.setText("2.What do you think of the weight of our products?");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 177, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, -1, -1));
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Not satisfied");
@@ -148,7 +148,7 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 133, -1, -1));
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, -1));
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Satisfied");
@@ -157,14 +157,14 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 133, -1, -1));
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, -1, -1));
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("Very satisfied");
-        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 133, -1, -1));
+        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, -1, -1));
 
         jLabel7.setText("We will feedback to you as soon as possible and your satisfaction is guaranteed.");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 532, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 640, -1, -1));
 
         buttonGroup2.add(jRadioButton4);
         jRadioButton4.setText("Not satisfied");
@@ -173,7 +173,7 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 205, -1, -1));
+        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, -1, -1));
 
         buttonGroup2.add(jRadioButton5);
         jRadioButton5.setText("Satisfied");
@@ -182,11 +182,11 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton5ActionPerformed(evt);
             }
         });
-        add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 205, -1, -1));
+        add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, -1, -1));
 
         buttonGroup2.add(jRadioButton6);
         jRadioButton6.setText("Very satisfied");
-        add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 205, -1, -1));
+        add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 270, -1, -1));
 
         buttonGroup3.add(jRadioButton7);
         jRadioButton7.setText("Not satisfied");
@@ -195,7 +195,7 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton7ActionPerformed(evt);
             }
         });
-        add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 274, -1, -1));
+        add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, -1, -1));
 
         buttonGroup3.add(jRadioButton8);
         jRadioButton8.setText("Satisfied");
@@ -204,14 +204,14 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton8ActionPerformed(evt);
             }
         });
-        add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 274, -1, -1));
+        add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, -1, -1));
 
         buttonGroup3.add(jRadioButton9);
         jRadioButton9.setText("Very satisfied");
-        add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 274, -1, -1));
+        add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 340, -1, -1));
 
         jLabel8.setText("3.What do you think of the power of our products?");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 246, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
 
         buttonGroup4.add(jRadioButton10);
         jRadioButton10.setText("Satisfied");
@@ -220,14 +220,14 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton10ActionPerformed(evt);
             }
         });
-        add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 343, -1, -1));
+        add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, -1, -1));
 
         buttonGroup4.add(jRadioButton11);
         jRadioButton11.setText("Very satisfied");
-        add(jRadioButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 343, -1, -1));
+        add(jRadioButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, -1, -1));
 
         jLabel10.setText("4.What do you think of the performance of our products?");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 315, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, -1, -1));
 
         buttonGroup4.add(jRadioButton12);
         jRadioButton12.setText("Not satisfied");
@@ -236,16 +236,20 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
                 jRadioButton12ActionPerformed(evt);
             }
         });
-        add(jRadioButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 343, -1, -1));
+        add(jRadioButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 698, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 790, -1, -1));
 
+        viewFeedbackFromEquipmentManufactureJTable.setBackground(new java.awt.Color(167, 221, 214));
         viewFeedbackFromEquipmentManufactureJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -264,7 +268,16 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(viewFeedbackFromEquipmentManufactureJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 566, 510, 114));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 670, 510, 114));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel11.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("FEEDBACK");
+        jPanel1.add(jLabel11);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 530, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton12ActionPerformed
@@ -393,6 +406,7 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JTextArea feedbackJTextArea;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -400,7 +414,7 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
