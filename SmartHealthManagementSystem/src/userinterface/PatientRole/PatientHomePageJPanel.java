@@ -39,7 +39,7 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
         this.patientOrganization = (PatientOrganisation)patientOrganization;
         this.enterprise = enterprise;
         //this.patientDirectory = patientDirectory;
-//        patientNameLable.setText(userAccount.getName());
+        patientNameLable.setText(userAccount.getName());
     }
     
 
