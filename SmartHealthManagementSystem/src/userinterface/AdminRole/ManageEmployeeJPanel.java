@@ -117,6 +117,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jLabel3.setText("Organization");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, -1, -1));
 
+        organizationJTable.setBackground(new java.awt.Color(255, 204, 204));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
