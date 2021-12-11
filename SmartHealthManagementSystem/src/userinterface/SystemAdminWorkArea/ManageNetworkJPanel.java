@@ -57,46 +57,54 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         createNetworkJButton = new javax.swing.JButton();
         nameJTextField = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         deleteJButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         networkJTable = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(164, 213, 225));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel1.setText("Network Name");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 296, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, -1, -1));
 
+        createNetworkJButton.setBackground(new java.awt.Color(0, 24, 91));
+        createNetworkJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        createNetworkJButton.setForeground(new java.awt.Color(255, 255, 255));
         createNetworkJButton.setText("Create New Network");
         createNetworkJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createNetworkJButtonActionPerformed(evt);
             }
         });
-        add(createNetworkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 344, -1, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 291, 123, -1));
+        add(createNetworkJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, -1, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 123, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<< Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 400, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel2.setText("Manage Network");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 45, -1, -1));
-
+        deleteJButton.setBackground(new java.awt.Color(0, 24, 91));
+        deleteJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        deleteJButton.setForeground(new java.awt.Color(255, 255, 255));
         deleteJButton.setText("Delete");
         deleteJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteJButtonActionPerformed(evt);
             }
         });
-        add(deleteJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 344, -1, -1));
+        add(deleteJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 480, -1, -1));
 
+        networkJTable.setBackground(new java.awt.Color(164, 213, 225));
         networkJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
@@ -125,7 +133,17 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(networkJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 102, 404, 160));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 404, 180));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 30)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("MANAGE NETWORK");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 560, 70));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createNetworkJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createNetworkJButtonActionPerformed
@@ -137,16 +155,6 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
 
         populateNetworkTable();
     }//GEN-LAST:event_createNetworkJButtonActionPerformed
-
-    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
-        userProcessContainer.remove(this);
-        Component[] componentArray = userProcessContainer.getComponents();
-        Component component = componentArray[componentArray.length - 1];
-        SystemAdminWorkAreaJPanel sysAdminwjp = (SystemAdminWorkAreaJPanel) component;
-        sysAdminwjp.populateTree();
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
-    }//GEN-LAST:event_backJButtonActionPerformed
 
     private void deleteJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteJButtonActionPerformed
         // TODO add your handling code here:
@@ -161,13 +169,24 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_deleteJButtonActionPerformed
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+        userProcessContainer.remove(this);
+        Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        SystemAdminWorkAreaJPanel sysAdminwjp = (SystemAdminWorkAreaJPanel) component;
+        sysAdminwjp.populateTree();
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton createNetworkJButton;
     private javax.swing.JButton deleteJButton;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField nameJTextField;
     private javax.swing.JTable networkJTable;
