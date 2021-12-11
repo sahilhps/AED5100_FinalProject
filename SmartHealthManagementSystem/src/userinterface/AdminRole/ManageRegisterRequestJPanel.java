@@ -61,14 +61,16 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel12 = new javax.swing.JLabel();
         approveJButton = new javax.swing.JButton();
         delinceJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTable1.setBackground(new java.awt.Color(255, 204, 204));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -90,36 +92,50 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 715, 203));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 715, 203));
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Register Request List");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 269, -1));
-
+        approveJButton.setBackground(new java.awt.Color(0, 24, 91));
+        approveJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        approveJButton.setForeground(new java.awt.Color(255, 255, 255));
         approveJButton.setText("Approve");
         approveJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 approveJButtonActionPerformed(evt);
             }
         });
-        add(approveJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, -1, -1));
+        add(approveJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, -1, -1));
 
+        delinceJButton.setBackground(new java.awt.Color(0, 24, 91));
+        delinceJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        delinceJButton.setForeground(new java.awt.Color(255, 255, 255));
         delinceJButton.setText("Decline");
         delinceJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 delinceJButtonActionPerformed(evt);
             }
         });
-        add(delinceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
+        add(delinceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 480, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Register Request List");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 440, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void approveJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_approveJButtonActionPerformed
@@ -178,6 +194,7 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JButton delinceJButton;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

@@ -224,7 +224,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 createUserAccountJButtonActionPerformed(evt);
             }
         });
-        add(createUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 600, 130, 40));
+        add(createUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 600, 150, 30));
 
         backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -235,7 +235,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 640, 100, 40));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 640, 100, 30));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 

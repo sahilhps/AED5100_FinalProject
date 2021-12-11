@@ -79,21 +79,19 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         organizationJTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         organizationJComboBox = new javax.swing.JComboBox();
         addOrganizationJButtion = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Manage Organization");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 28, -1, -1));
-
+        organizationJTable.setBackground(new java.awt.Color(255, 204, 204));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -112,33 +110,54 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(organizationJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 82, -1, 194));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, -1, 160));
 
+        jLabel1.setBackground(new java.awt.Color(255, 204, 204));
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 24, 91));
         jLabel1.setText("Organization Type");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 311, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, -1, -1));
 
+        organizationJComboBox.setBackground(new java.awt.Color(255, 204, 204));
+        organizationJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         organizationJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 302, 146, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 146, -1));
 
+        addOrganizationJButtion.setBackground(new java.awt.Color(0, 24, 91));
+        addOrganizationJButtion.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        addOrganizationJButtion.setForeground(new java.awt.Color(255, 255, 255));
         addOrganizationJButtion.setText("Add Organiztion");
         addOrganizationJButtion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addOrganizationJButtionActionPerformed(evt);
             }
         });
-        add(addOrganizationJButtion, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 355, -1, -1));
+        add(addOrganizationJButtion, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 396, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Manage Organization");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 410, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void organizationJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationJComboBoxActionPerformed
@@ -165,6 +184,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox organizationJComboBox;
     private javax.swing.JTable organizationJTable;
