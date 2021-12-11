@@ -53,15 +53,19 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         manageProfileJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         patientNameLable = new javax.swing.JLabel();
         manageVitalSignsAndFitnessRecordJButton = new javax.swing.JButton();
         sendFeedbackJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
+
+        jButton1.setBackground(new java.awt.Color(167, 221, 214));
+        jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jButton1.setText("Check Doctor Response");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,17 +73,8 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel10.setBackground(new java.awt.Color(255, 255, 204));
-        jLabel10.setFont(new java.awt.Font("Savoye LET", 1, 36)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 0, 204));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Wearable Device Health Management System");
-        jLabel10.setOpaque(true);
-
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("My home Page");
-
+        manageProfileJButton.setBackground(new java.awt.Color(167, 221, 214));
+        manageProfileJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         manageProfileJButton.setText("Manage My Profile");
         manageProfileJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,6 +94,8 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
         patientNameLable.setText("<patientName>");
         patientNameLable.setEnabled(false);
 
+        manageVitalSignsAndFitnessRecordJButton.setBackground(new java.awt.Color(167, 221, 214));
+        manageVitalSignsAndFitnessRecordJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         manageVitalSignsAndFitnessRecordJButton.setText("Manage My Vital Signs and Fiteness Record");
         manageVitalSignsAndFitnessRecordJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +103,8 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
             }
         });
 
+        sendFeedbackJButton.setBackground(new java.awt.Color(167, 221, 214));
+        sendFeedbackJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         sendFeedbackJButton.setText("Send Feedback");
         sendFeedbackJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,59 +118,58 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
         jLabel2.setText("!");
         jLabel2.setEnabled(false);
 
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel11.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("MY HOME PAGE");
+        jPanel1.add(jLabel11);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 35, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jLabel10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel1)
-                        .addGap(6, 6, 6)
-                        .addComponent(patientNameLable)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(203, 203, 203)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(manageProfileJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(manageVitalSignsAndFitnessRecordJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sendFeedbackJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sendFeedbackJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(manageVitalSignsAndFitnessRecordJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(51, 51, 51)
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(patientNameLable)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel2))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(277, 277, 277)
+                            .addComponent(manageProfileJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                .addGap(22, 22, 22)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(patientNameLable)
+                    .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addGap(21, 21, 21)
-                .addComponent(jLabel9)
-                .addGap(64, 64, 64)
+                .addGap(55, 55, 55)
                 .addComponent(manageProfileJButton)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addComponent(manageVitalSignsAndFitnessRecordJButton)
-                .addGap(18, 18, 18)
+                .addGap(39, 39, 39)
                 .addComponent(sendFeedbackJButton)
-                .addGap(18, 18, 18)
+                .addGap(42, 42, 42)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -211,9 +209,9 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton manageProfileJButton;
     private javax.swing.JButton manageVitalSignsAndFitnessRecordJButton;
     private javax.swing.JLabel patientNameLable;

@@ -109,7 +109,6 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel9 = new javax.swing.JLabel();
         addJButton = new javax.swing.JButton();
         viewJButton = new javax.swing.JButton();
         editJButton = new javax.swing.JButton();
@@ -122,11 +121,13 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
         viewVitalSignsJTable1 = new javax.swing.JTable();
         showFitnessChartJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("Manage Vital Signs and Fitness Record");
+        setBackground(new java.awt.Color(167, 221, 214));
 
+        addJButton.setBackground(new java.awt.Color(167, 221, 214));
+        addJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         addJButton.setText("Add Record");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +135,8 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        viewJButton.setBackground(new java.awt.Color(167, 221, 214));
+        viewJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         viewJButton.setText("View Details");
         viewJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,10 +144,16 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        editJButton.setBackground(new java.awt.Color(167, 221, 214));
+        editJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         editJButton.setText("Edit Record");
 
+        deleteJButton.setBackground(new java.awt.Color(167, 221, 214));
+        deleteJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         deleteJButton.setText("Delete Record");
 
+        showVitalSignsChartJButton.setBackground(new java.awt.Color(167, 221, 214));
+        showVitalSignsChartJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         showVitalSignsChartJButton.setText("Show VItal Signs Chart");
         showVitalSignsChartJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,6 +161,8 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        viewResponseJButton.setBackground(new java.awt.Color(167, 221, 214));
+        viewResponseJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         viewResponseJButton.setText("View Response");
         viewResponseJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,6 +170,8 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        sendToMyDoctorJButton.setBackground(new java.awt.Color(167, 221, 214));
+        sendToMyDoctorJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         sendToMyDoctorJButton.setText("Send To My Doctor");
         sendToMyDoctorJButton.setMaximumSize(new java.awt.Dimension(131, 29));
         sendToMyDoctorJButton.setMinimumSize(new java.awt.Dimension(131, 29));
@@ -168,6 +181,9 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,6 +191,7 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        viewVitalSignsJTable1.setBackground(new java.awt.Color(167, 221, 214));
         viewVitalSignsJTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -207,6 +224,8 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             viewVitalSignsJTable1.getColumnModel().getColumn(4).setResizable(false);
         }
 
+        showFitnessChartJButton.setBackground(new java.awt.Color(167, 221, 214));
+        showFitnessChartJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         showFitnessChartJButton.setText("Show Fitness Chart");
         showFitnessChartJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,12 +233,21 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
+        refreshJButton.setBackground(new java.awt.Color(167, 221, 214));
+        refreshJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel11.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("MANAGE VITAL SIGNS AND FITNESS RECORD");
+        jPanel1.add(jLabel11);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -228,62 +256,63 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 507, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(refreshJButton))
+                        .addGap(40, 40, 40)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addGap(81, 81, 81)
                         .addComponent(backJButton))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(showVitalSignsChartJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(showFitnessChartJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(viewResponseJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(sendToMyDoctorJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(91, 91, 91)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addComponent(viewJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addComponent(editJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(deleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(117, 117, 117))
+                                .addComponent(editJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(viewJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(30, 30, 30)
+                                    .addComponent(deleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(showVitalSignsChartJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(45, 45, 45)
+                                .addComponent(showFitnessChartJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(37, 37, 37)
+                                .addComponent(viewResponseJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(238, 238, 238)
+                        .addComponent(sendToMyDoctorJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(90, 90, 90)
+                        .addComponent(refreshJButton)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(refreshJButton)))
-                .addGap(24, 24, 24)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(20, 20, 20)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addJButton)
-                    .addComponent(viewJButton)
                     .addComponent(editJButton)
-                    .addComponent(deleteJButton))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(showVitalSignsChartJButton)
-                    .addComponent(showFitnessChartJButton)
+                    .addComponent(deleteJButton)
+                    .addComponent(viewJButton))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewResponseJButton)
-                    .addComponent(sendToMyDoctorJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
-                .addComponent(backJButton))
+                    .addComponent(showFitnessChartJButton)
+                    .addComponent(showVitalSignsChartJButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sendToMyDoctorJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(refreshJButton))
+                .addGap(75, 75, 75)
+                .addComponent(backJButton)
+                .addGap(18, 18, 18))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -425,7 +454,8 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
     private javax.swing.JButton backJButton;
     private javax.swing.JButton deleteJButton;
     private javax.swing.JButton editJButton;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JButton refreshJButton;
     private javax.swing.JButton sendToMyDoctorJButton;

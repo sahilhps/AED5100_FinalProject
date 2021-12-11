@@ -110,7 +110,6 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         pharmacyJComboBox = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -118,25 +117,26 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
         drugRequestJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(230, 196, 146));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Make Prescription");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 35, 243, -1));
-
+        pharmacyJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         pharmacyJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         pharmacyJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pharmacyJComboBoxActionPerformed(evt);
             }
         });
-        add(pharmacyJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 78, 127, -1));
+        add(pharmacyJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 127, 127, 30));
 
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel1.setText("Pharmacy");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 82, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
 
+        drugRequestJTable.setBackground(new java.awt.Color(230, 196, 146));
         drugRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -155,26 +155,44 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(drugRequestJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 615, 136));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 615, 136));
 
+        drugRequestJButton.setBackground(new java.awt.Color(0, 24, 91));
+        drugRequestJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        drugRequestJButton.setForeground(new java.awt.Color(255, 255, 255));
         drugRequestJButton.setText("Request Drug");
         drugRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 drugRequestJButtonActionPerformed(evt);
             }
         });
-        add(drugRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, -1, -1));
+        add(drugRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 400, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Raanana", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 24, 91));
         jLabel2.setText("Drug Catalog:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 124, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel13.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel13.setFont(new java.awt.Font("Lucida Grande", 3, 30)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("PRESCRIBE MEDICINES");
+        jPanel1.add(jLabel13);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 560, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void pharmacyJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pharmacyJComboBoxActionPerformed
@@ -206,8 +224,9 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
     private javax.swing.JButton drugRequestJButton;
     private javax.swing.JTable drugRequestJTable;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JComboBox pharmacyJComboBox;
     // End of variables declaration//GEN-END:variables

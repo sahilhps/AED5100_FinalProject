@@ -79,64 +79,82 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
         jLabel11 = new javax.swing.JLabel();
         standTimeJTextField = new javax.swing.JTextField();
         moveTimeJTextField = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
         excerciseTimeJTextField = new javax.swing.JTextField();
         totalTimeJTextField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel16.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel16.setText("Weight in pounds");
-        add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 193, -1, -1));
+        add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, -1, -1));
 
         respiratoryRateJTextField.setEnabled(false);
-        add(respiratoryRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(199, 86, 159, -1));
+        add(respiratoryRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 110, -1));
 
         heartRateJTextField.setEnabled(false);
-        add(heartRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(199, 118, 159, -1));
+        add(heartRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 110, -1));
 
         systolicBloodPressureJTextField.setEnabled(false);
-        add(systolicBloodPressureJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 159, -1));
+        add(systolicBloodPressureJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 110, -1));
 
         weightInPoundsJTextField.setEnabled(false);
-        add(weightInPoundsJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 188, 159, -1));
+        add(weightInPoundsJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, -1));
 
+        jLabel13.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel13.setText("Respiratory rate");
-        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 96, -1, -1));
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
 
+        jLabel14.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel14.setText("Heart rate");
-        add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 123, -1, -1));
+        add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, -1));
 
+        jLabel15.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel15.setText("Systolic blood pressure");
-        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 155, -1, -1));
+        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
 
+        saveJButton.setBackground(new java.awt.Color(0, 24, 91));
+        saveJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        saveJButton.setForeground(new java.awt.Color(255, 255, 255));
         saveJButton.setText("Save");
         saveJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveJButtonActionPerformed(evt);
             }
         });
-        add(saveJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 277, -1, -1));
+        add(saveJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 321, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, -1, -1));
 
+        updateJButton.setBackground(new java.awt.Color(0, 24, 91));
+        updateJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        updateJButton.setForeground(new java.awt.Color(255, 255, 255));
         updateJButton.setText("Update");
-        add(updateJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 277, -1, -1));
+        add(updateJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 390, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel9.setText("Move Time (mins)");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 129, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel10.setText("Excercise Time (mins)");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 168, -1, 26));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, -1, -1));
 
+        jLabel11.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel11.setText("Total Time (mins)");
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 211, -1, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, -1, -1));
 
         standTimeJTextField.setEnabled(false);
         standTimeJTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -144,25 +162,30 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
                 standTimeJTextFieldActionPerformed(evt);
             }
         });
-        add(standTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 80, 162, -1));
+        add(standTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 90, -1));
 
         moveTimeJTextField.setEnabled(false);
-        add(moveTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 124, 159, -1));
-
-        jLabel17.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel17.setText("View Record Details");
-        add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 28, 269, -1));
+        add(moveTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 90, -1));
 
         excerciseTimeJTextField.setEnabled(false);
-        add(excerciseTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 168, 159, -1));
+        add(excerciseTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 90, -1));
 
         totalTimeJTextField.setEditable(false);
         totalTimeJTextField.setEnabled(false);
-        add(totalTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 206, 159, -1));
+        add(totalTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 90, -1));
 
+        jLabel8.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel8.setText("Stand Time (mins)");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 90, 122, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 170, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 1, 33)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("VIEW RECORD DETAILS");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 590, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void standTimeJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_standTimeJTextFieldActionPerformed
@@ -187,13 +210,14 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField heartRateJTextField;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField moveTimeJTextField;
     private javax.swing.JTextField respiratoryRateJTextField;
     private javax.swing.JButton saveJButton;

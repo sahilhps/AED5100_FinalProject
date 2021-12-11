@@ -3,12 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/AdminRole/ManageEmployeeJPanel.java</file>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/MainJFrame1.java</file>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/AdminRole/AdminWorkAreaJPanel.java</file>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/AdminRole/ManageOrganizationJPanel.java</file>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/AdminRole/ManageRegisterRequestJPanel.java</file>
-            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/AdminRole/ManageUserAccountJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/ManageMyVitalSignsAndFitnessRecordJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/ManageMyProfileJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/FeedbackToEuipmentManufactureJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/ViewResponseFromDoctorJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/VitalSignsChartJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/CreateMyProfileJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/ViewUpdateRecordDetailsJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/AddRecordJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/DoctorRespondJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/ViewUpdateMyProfileJPanel.java</file>
+            <file>file:/Users/mitishah/Kaam%20wala%20folder/chalnabro/SmartHealthManagementSystem/src/userinterface/PatientRole/PatientHomePageJPanel.java</file>
         </group>
     </open-files>
 </project-private>
