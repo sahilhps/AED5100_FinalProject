@@ -63,7 +63,6 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         nameJTextField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -86,16 +85,16 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
         patientIDJTextField = new javax.swing.JTextField();
         submitJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("Create My Profile");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 26, 229, -1));
-
+        jLabel1.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel1.setText("Name");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 79, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
 
         nameJTextField.setEditable(false);
         nameJTextField.setEnabled(false);
@@ -104,91 +103,101 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
                 nameJTextFieldActionPerformed(evt);
             }
         });
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 74, 183, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 183, -1));
 
+        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel2.setText("Age");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 160, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, -1, -1));
 
         ageJTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ageJTextFieldActionPerformed(evt);
             }
         });
-        add(ageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 155, 183, -1));
+        add(ageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 60, -1));
 
         numberJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 numberJTextFieldFocusLost(evt);
             }
         });
-        add(numberJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 362, 106, -1));
+        add(numberJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 106, -1));
 
         emailJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 emailJTextFieldFocusLost(evt);
             }
         });
-        add(emailJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 318, 182, -1));
+        add(emailJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 182, -1));
 
         zipCodeJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 zipCodeJTextFieldFocusLost(evt);
             }
         });
-        add(zipCodeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 274, 185, -1));
+        add(zipCodeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, 90, -1));
 
         cityJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 cityJTextFieldFocusLost(evt);
             }
         });
-        add(cityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 236, 185, -1));
+        add(cityJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 240, 185, -1));
 
         streetAddressJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 streetAddressJTextFieldFocusLost(evt);
             }
         });
-        add(streetAddressJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 198, 185, -1));
+        add(streetAddressJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 185, -1));
 
+        jLabel6.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel6.setText("Phone Number");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 367, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel5.setText("Email Address");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 323, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel3.setText("Zip Code");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 279, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel7.setText("City/Town");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 241, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel8.setText("Street Address");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 203, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
         jLabel10.setText("-");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 367, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 360, 20, 20));
 
         areaCodeJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 areaCodeJTextFieldFocusLost(evt);
             }
         });
-        add(areaCodeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 362, 50, -1));
+        add(areaCodeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, 50, -1));
 
+        primaryDocNameJLabel.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         primaryDocNameJLabel.setText("Primary Doctor Name");
-        add(primaryDocNameJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 410, -1, -1));
+        add(primaryDocNameJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 430, -1, -1));
 
+        primaryDoctorNameJComboBox.setBackground(new java.awt.Color(167, 221, 214));
+        primaryDoctorNameJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 18)); // NOI18N
         primaryDoctorNameJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         primaryDoctorNameJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 primaryDoctorNameJComboBoxActionPerformed(evt);
             }
         });
-        add(primaryDoctorNameJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 406, 144, -1));
+        add(primaryDoctorNameJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, 144, -1));
 
+        jLabel4.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel4.setText("Patient ID");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 116, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, -1, -1));
 
         patientIDJTextField.setEditable(false);
         patientIDJTextField.setEnabled(false);
@@ -197,23 +206,38 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
                 patientIDJTextFieldActionPerformed(evt);
             }
         });
-        add(patientIDJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 111, 183, -1));
+        add(patientIDJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 183, -1));
 
+        submitJButton.setBackground(new java.awt.Color(0, 24, 91));
+        submitJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("Submit");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 469, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 480, -1, 30));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 501, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, -1, 30));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Create My Profile");
+        jPanel1.add(jLabel9);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 460, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameJTextFieldActionPerformed
@@ -366,6 +390,7 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField nameJTextField;
     private javax.swing.JTextField numberJTextField;
     private javax.swing.JTextField patientIDJTextField;
