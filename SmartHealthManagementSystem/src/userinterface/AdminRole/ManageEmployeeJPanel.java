@@ -83,7 +83,6 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         nameJTextField = new javax.swing.JTextField();
         organizationEmpJComboBox = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
@@ -91,32 +90,32 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         organizationJTable = new javax.swing.JTable();
         organizationJComboBox = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         addEmployeeJButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
-        setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 6, true));
+        setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 6, true));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 170, -1));
 
-        jLabel12.setBackground(new java.awt.Color(0, 51, 153));
-        jLabel12.setFont(new java.awt.Font("Mshtakan", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("              Manage Employee");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 500, 60));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 273, 126, -1));
-
+        organizationEmpJComboBox.setBackground(new java.awt.Color(255, 204, 204));
+        organizationEmpJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationEmpJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationEmpJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 126, -1));
+        add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 320, 200, -1));
 
+        jLabel3.setFont(new java.awt.Font("Savoye LET", 1, 30)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 102));
         jLabel3.setText("Organization");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, -1, -1));
 
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -146,37 +145,59 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(organizationJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 480, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 500, 100));
 
+        organizationJComboBox.setBackground(new java.awt.Color(255, 204, 204));
+        organizationJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 139, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 210, -1));
 
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 1, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 102));
         jLabel1.setText("Organization");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
 
-        jLabel2.setText("Employee Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 278, -1, -1));
-
+        addEmployeeJButton.setBackground(new java.awt.Color(0, 24, 91));
+        addEmployeeJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        addEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         addEmployeeJButton.setText("Add Employee");
         addEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(addEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(284, 326, -1, -1));
+        add(addEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, 160, 30));
 
+        jLabel2.setFont(new java.awt.Font("Savoye LET", 1, 30)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel2.setText("Employee Name");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, -1, -1));
+
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, -1, 30));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setBackground(new java.awt.Color(0, 51, 153));
+        jLabel12.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("  Manage Employee");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 620, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void organizationJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationJComboBoxActionPerformed
@@ -221,6 +242,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField nameJTextField;
     private javax.swing.JComboBox organizationEmpJComboBox;

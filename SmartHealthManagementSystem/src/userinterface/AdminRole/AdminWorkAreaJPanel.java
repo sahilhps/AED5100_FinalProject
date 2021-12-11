@@ -52,85 +52,94 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         manageOrgJButton = new javax.swing.JButton();
         manageEmpJButton = new javax.swing.JButton();
         manageRegisterRequestJButton = new javax.swing.JButton();
-        labAdmin = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        labAdmin = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         manageUserAccountJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageUserAccountJButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         manageUserAccountJButton.setText("Manage User Account");
         manageUserAccountJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageUserAccountJButtonActionPerformed(evt);
             }
         });
-        add(manageUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, -1, 20));
+        add(manageUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, -1, -1));
 
-        valueLabel.setFont(new java.awt.Font("PT Sans", 0, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("PT Sans", 1, 18)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, -1, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
 
         manageOrgJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageOrgJButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         manageOrgJButton.setText("Manage Organization");
         manageOrgJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrgJButtonActionPerformed(evt);
             }
         });
-        add(manageOrgJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, 20));
+        add(manageOrgJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, -1, 30));
 
         manageEmpJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageEmpJButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         manageEmpJButton.setText("Manage Employee");
         manageEmpJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmpJButtonActionPerformed(evt);
             }
         });
-        add(manageEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, -1, 20));
+        add(manageEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, -1, 30));
 
         manageRegisterRequestJButton.setBackground(new java.awt.Color(255, 204, 204));
+        manageRegisterRequestJButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         manageRegisterRequestJButton.setText("Manage Register Request");
         manageRegisterRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageRegisterRequestJButtonActionPerformed(evt);
             }
         });
-        add(manageRegisterRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, 20));
+        add(manageRegisterRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 450, -1, 30));
 
-        labAdmin.setBackground(new java.awt.Color(0, 51, 153));
-        labAdmin.setFont(new java.awt.Font("Raanana", 1, 18)); // NOI18N
-        labAdmin.setForeground(new java.awt.Color(255, 255, 255));
-        labAdmin.setText("                                   ADMIN WORK AREA");
-        add(labAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 50, 500, 70));
-
-        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 102));
         jLabel1.setText("Manage the requests");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
         jLabel2.setText("Modify the organization ");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Savoye LET", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 102));
         jLabel3.setText("Modify the user Account");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Savoye LET", 0, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 102));
         jLabel4.setText("Modify the Employees");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        labAdmin.setBackground(new java.awt.Color(0, 0, 153));
+        labAdmin.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
+        labAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        labAdmin.setText("   ADMIN WORK AREA");
+        jPanel1.add(labAdmin);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 820, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageUserAccountJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageUserAccountJButtonActionPerformed
@@ -174,6 +183,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labAdmin;
     private javax.swing.JButton manageEmpJButton;
     private javax.swing.JButton manageOrgJButton;

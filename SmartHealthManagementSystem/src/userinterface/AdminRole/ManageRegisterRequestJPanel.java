@@ -65,8 +65,8 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
         approveJButton = new javax.swing.JButton();
         delinceJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -120,14 +120,6 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
-
-        jLabel10.setBackground(new java.awt.Color(255, 255, 204));
-        jLabel10.setFont(new java.awt.Font("Savoye LET", 1, 36)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 0, 204));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Wearable Device Health Management System");
-        jLabel10.setOpaque(true);
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, 55));
     }// </editor-fold>//GEN-END:initComponents
 
     private void approveJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_approveJButtonActionPerformed
@@ -185,7 +177,6 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton approveJButton;
     private javax.swing.JButton backJButton;
     private javax.swing.JButton delinceJButton;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
