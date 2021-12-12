@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ViewResponseFromDoctorJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -87,7 +87,7 @@ public class ViewResponseFromDoctorJPanel extends javax.swing.JPanel {
     }
     
     private void populateDetails() {
-        respondJTextArea.setText(patientDoctorWorkRequest.getDoctorResponseMessage());
+        respondJTextArea.setText(patientDoctorWorkRequest.getrespondFromDoctor());
         
 
     }

@@ -16,9 +16,9 @@ public class FeedbackWorkRequest extends WorkRequest{
      
     private String feedbackMessage;
     private UserAccount customerService;
-    private String satisfied1;
-    private String satisfied2;
-    private String satisfied3;
+    private String okay1;
+    private String okay2;
+    private String okay3;
 
     public String getFeedbackMessage() {
         return feedbackMessage;
@@ -36,112 +36,112 @@ public class FeedbackWorkRequest extends WorkRequest{
         this.customerService = customerService;
     }
 
-    public String getSatisfied1() {
-        return satisfied1;
+    public String getokay1() {
+        return okay1;
     }
 
-    public void setSatisfied1(String satisfied1) {
-        this.satisfied1 = satisfied1;
+    public void setokay1(String okay1) {
+        this.okay1 = okay1;
     }
 
-    public String getSatisfied2() {
-        return satisfied2;
+    public String getokay2() {
+        return okay2;
     }
 
-    public void setSatisfied2(String satisfied2) {
-        this.satisfied2 = satisfied2;
+    public void setokay2(String okay2) {
+        this.okay2 = okay2;
     }
 
-    public String getSatisfied3() {
-        return satisfied3;
+    public String getokay3() {
+        return okay3;
     }
 
-    public void setSatisfied3(String satisfied3) {
-        this.satisfied3 = satisfied3;
+    public void setokay3(String okay3) {
+        this.okay3 = okay3;
     }
 
-    public String getSatisfied4() {
-        return satisfied4;
+    public String getokay4() {
+        return okay4;
     }
 
-    public void setSatisfied4(String satisfied4) {
-        this.satisfied4 = satisfied4;
+    public void setokay4(String okay4) {
+        this.okay4 = okay4;
     }
 
-    public String getVerysatisfied1() {
-        return verysatisfied1;
+    public String gethowOkay1() {
+        return howOkay1;
     }
 
-    public void setVerysatisfied1(String verysatisfied1) {
-        this.verysatisfied1 = verysatisfied1;
+    public void sethowOkay1(String howOkay1) {
+        this.howOkay1 = howOkay1;
     }
 
-    public String getVerysatisfied2() {
-        return verysatisfied2;
+    public String gethowOkay2() {
+        return howOkay2;
     }
 
-    public void setVerysatisfied2(String verysatisfied2) {
-        this.verysatisfied2 = verysatisfied2;
+    public void sethowOkay2(String howOkay2) {
+        this.howOkay2 = howOkay2;
     }
 
-    public String getVerysatisfied3() {
-        return verysatisfied3;
+    public String gethowOkay3() {
+        return howOkay3;
     }
 
-    public void setVerysatisfied3(String verysatisfied3) {
-        this.verysatisfied3 = verysatisfied3;
+    public void sethowOkay3(String howOkay3) {
+        this.howOkay3 = howOkay3;
     }
 
-    public String getVerysatisfied4() {
-        return verysatisfied4;
+    public String gethowOkay4() {
+        return howOkay4;
     }
 
-    public void setVerysatisfied4(String verysatisfied4) {
-        this.verysatisfied4 = verysatisfied4;
+    public void sethowOkay4(String howOkay4) {
+        this.howOkay4 = howOkay4;
     }
 
-    public String getNotsatisfied1() {
-        return notsatisfied1;
+    public String getletOkay1() {
+        return letOkay1;
     }
 
-    public void setNotsatisfied1(String notsatisfied1) {
-        this.notsatisfied1 = notsatisfied1;
+    public void setletOkay1(String letOkay1) {
+        this.letOkay1 = letOkay1;
     }
 
-    public String getNotsatisfied2() {
-        return notsatisfied2;
+    public String getletOkay2() {
+        return letOkay2;
     }
 
-    public void setNotsatisfied2(String notsatisfied2) {
-        this.notsatisfied2 = notsatisfied2;
+    public void setletOkay2(String letOkay2) {
+        this.letOkay2 = letOkay2;
     }
 
-    public String getNotsatisfied3() {
-        return notsatisfied3;
+    public String getletOkay3() {
+        return letOkay3;
     }
 
-    public void setNotsatisfied3(String notsatisfied3) {
-        this.notsatisfied3 = notsatisfied3;
+    public void setletOkay3(String letOkay3) {
+        this.letOkay3 = letOkay3;
     }
 
-    public String getNotsatisfied4() {
-        return notsatisfied4;
+    public String getletOkay4() {
+        return letOkay4;
     }
 
-    public void setNotsatisfied4(String notsatisfied4) {
-        this.notsatisfied4 = notsatisfied4;
+    public void setletOkay4(String letOkay4) {
+        this.letOkay4 = letOkay4;
     }
-    private String satisfied4;
+    private String okay4;
     
-    private String verysatisfied1;
-    private String verysatisfied2;
-    private String verysatisfied3;
-    private String verysatisfied4;
+    private String howOkay1;
+    private String howOkay2;
+    private String howOkay3;
+    private String howOkay4;
     
-    private String notsatisfied1;
-    private String notsatisfied2;
-    private String notsatisfied3;
-    private String notsatisfied4;
+    private String letOkay1;
+    private String letOkay2;
+    private String letOkay3;
+    private String letOkay4;
     
     private Date date;
 

@@ -12,21 +12,21 @@ import java.util.ArrayList;
  * @author Sahil Sonawane <your.name at your.org>
  */
 public class RegisterRequestDirectory {
-    private ArrayList<RegisterRequest> registerRequestList;
+    private ArrayList<RegisterRequest> registerToRequestList;
 
-    public ArrayList<RegisterRequest> getRegisterRequestList() {
-        return registerRequestList;
+    public ArrayList<RegisterRequest> getregisterToRequestList() {
+        return registerToRequestList;
     }
 
-    public void setRegisterRequestList(ArrayList<RegisterRequest> registerRequestList) {
-        this.registerRequestList = registerRequestList;
+    public void setregisterToRequestList(ArrayList<RegisterRequest> registerToRequestList) {
+        this.registerToRequestList = registerToRequestList;
     }
     public RegisterRequestDirectory() {
-        registerRequestList = new ArrayList<>();
+        registerToRequestList = new ArrayList<>();
     }
     public RegisterRequest createRegisterRequest() {
         RegisterRequest registerRequest = new RegisterRequest();
-        registerRequestList.add(registerRequest);
+        registerToRequestList.add(registerRequest);
         return registerRequest;
     }
     

@@ -67,12 +67,12 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                     if (patientDoctorWorkRequest.getDoctor()== userAccount) {
                     Object[] row = new Object[7];
                     row[0] = patientDoctorWorkRequest;
-                    row[1] = patientDoctorWorkRequest.getPatientName();
-                    row[2] = patientDoctorWorkRequest.getVsNormalorNot();
-                    row[3] = patientDoctorWorkRequest.getFtNormalorNot();
-                    row[4] = patientDoctorWorkRequest.getLabStatus() == null ? null : patientDoctorWorkRequest.getLabStatus();
-                    row[5] = patientDoctorWorkRequest.getPreStatus() == null ? null : patientDoctorWorkRequest.getPreStatus();
-                    row[6] = patientDoctorWorkRequest.getRespondStatus() == null ? null : patientDoctorWorkRequest.getRespondStatus();
+                    row[1] = patientDoctorWorkRequest.getpatientName();
+                    row[2] = patientDoctorWorkRequest.getisisNormal();
+                    row[3] = patientDoctorWorkRequest.getFtisNormal();
+                    row[4] = patientDoctorWorkRequest.getstatlab() == null ? null : patientDoctorWorkRequest.getstatlab();
+                    row[5] = patientDoctorWorkRequest.getpreStat() == null ? null : patientDoctorWorkRequest.getpreStat();
+                    row[6] = patientDoctorWorkRequest.getstattoRespond() == null ? null : patientDoctorWorkRequest.getstattoRespond();
                     model.addRow(row);
                     }
                 }
@@ -300,16 +300,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        //        String key= searchBoxJTextField.getText().trim();
-        //        if(key.length()==0)
-        //        {
-            //            JOptionPane.showMessageDialog(this, "Please enter key.", "Error", JOptionPane.ERROR_MESSAGE);
-            //            return;
-            //        }
-        //        ArrayList<Patient> searchPatients;
-        //        searchPatients = patientDirectory.searchPatient(key);
-        //        populateTable(searchPatients);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void viewDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsActionPerformed
@@ -326,7 +317,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
         }
 
         PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) viewVitalSignsJTable.getValueAt(selectedRow, 0);
-        patientDoctorWorkRequest.setRespondStatus("Processing");
+        patientDoctorWorkRequest.setstattoRespond("Processing");
 
         FitnessRecordRespondJPanel panel = new FitnessRecordRespondJPanel(userProcessContainer,enterprise,patientDoctorWorkRequest);
         userProcessContainer.add("FitnessRecordRespondJPanel", panel);

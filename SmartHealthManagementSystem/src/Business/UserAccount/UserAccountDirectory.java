@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author Sahil Sonawane
  */
 public class UserAccountDirectory {
     
@@ -79,7 +79,7 @@ public class UserAccountDirectory {
     }
 
     
-    public String checkExit(String name,Organisation org) {    ///manage user account
+    public String checkExit(String name,Organisation org) {    
           for(UserAccount ua:org.getUserAccountDirectory().getUserAccountList()){
               if(ua.getUsername().equals(name)){
                   return "";             

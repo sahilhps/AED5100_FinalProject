@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class DoctorRespondJPanel extends javax.swing.JPanel {
 
@@ -54,7 +54,7 @@ public class DoctorRespondJPanel extends javax.swing.JPanel {
                     Object[] row = new Object[2];
 
                     row[0] = patientDoctorWorkRequest;
-                    row[1] = patientDoctorWorkRequest.getDoctorResponseMessage();
+                    row[1] = patientDoctorWorkRequest.getrespondFromDoctor();
 
                     model.addRow(row);
 

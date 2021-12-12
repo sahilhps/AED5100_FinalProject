@@ -72,17 +72,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
         Organisation organization = (Organisation) organizationJComboBox.getSelectedItem();
-//        if (organization instanceof PatientOrganization) {
-//
-//            for (UserAccount ua : organization.getUserAccountDirectory().getUserAccountList()) {
-//                Object row[] = new Object[3];
-//                row[0] = ua.getPatient().getPatientName();
-//                row[1] = ua.getUsername();
-//                row[2] = ua.getRole();
-//                ((DefaultTableModel) userJTable.getModel()).addRow(row);
-//
-//            }
-//        }else{
+
           
           
             for (UserAccount ua : organization.getUserAccountDirectory().getUserAccountList()) {
@@ -266,15 +256,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
     private void createUserAccountJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUserAccountJButtonActionPerformed
         // TODO add your handling code here:
-//        String userName = nameJTextField.getText();
-//        String password = passwordJTextField.getText();
-//        Organization organization = (Organization) organizationJComboBox.getSelectedItem();
-//        Employee employee = (Employee) employeeJComboBox.getSelectedItem();
-//        Role role = (Role) roleJComboBox.getSelectedItem();
-//        
-//        organization.getUserAccountDirectory().createUserAccount(userName, password, employee, role);
-//        
-//        popData();
+
         
         Organisation org = (Organisation) organizationJComboBox.getSelectedItem();
         

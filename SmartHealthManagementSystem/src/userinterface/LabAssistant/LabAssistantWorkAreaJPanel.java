@@ -55,8 +55,8 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
             row[1] = patientDoctorWorkRequest.getMessage();
             row[2] = patientDoctorWorkRequest.getSender().getEmployee().getEmpName();
             row[3] = patientDoctorWorkRequest.getReceiver() == null ? null : patientDoctorWorkRequest.getReceiver().getName();
-            row[4] = patientDoctorWorkRequest.getLabStatus();
-            String result = ((PatientDoctorWorkRequest) patientDoctorWorkRequest).getTestResult();
+            row[4] = patientDoctorWorkRequest.getstatlab();
+            String result = ((PatientDoctorWorkRequest) patientDoctorWorkRequest).gettestingResult();
             row[5] = result == null ? "Waiting" : result;
             
             model.addRow(row);
@@ -184,7 +184,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
             PatientDoctorWorkRequest request = (PatientDoctorWorkRequest)testRequestJTable.getValueAt(selectedRow,0);
             request.setReceiver(userAccount);
-            request.setLabStatus("Pending");
+            request.setstatlab("Pending");
             populateTable();
             JOptionPane.showMessageDialog(null, "Success");
         }
@@ -200,7 +200,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         PatientDoctorWorkRequest request = (PatientDoctorWorkRequest)testRequestJTable.getValueAt(selectedRow, 0);
 
-        request.setLabStatus("Processing");
+        request.setstatlab("Processing");
 
         ProcessTestRequestJPanel processWorkRequestJPanel = new ProcessTestRequestJPanel(userProcessContainer, request);
         userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);

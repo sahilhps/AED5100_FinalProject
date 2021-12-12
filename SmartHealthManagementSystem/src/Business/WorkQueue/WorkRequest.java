@@ -72,7 +72,6 @@ public abstract class WorkRequest {
     private UserAccount receiver;
     private UserAccount patient;
     private UserAccount doctor;
-    
     private Date date;
     private Enterprise senderEnterprise;
     private Network senderNetwork;
