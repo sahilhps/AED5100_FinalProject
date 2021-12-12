@@ -12,7 +12,6 @@ import Business.Network.Network;
 import Business.Organisation.DoctorOrganisation;
 import Business.Organisation.HealthandHumanServicesOrganisation;
 import Business.Organisation.Organisation;
-import Business.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.PatientDoctorWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -112,20 +111,23 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
         viewDetails = new javax.swing.JButton();
         respondJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        reportToGovernmentHHSDJButton = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        doctorNameLable = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         viewVitalSignsJTable = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
+        reportToGovernmentHHSDJButton = new javax.swing.JButton();
+        doctorNameLable = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         Labtime = new javax.swing.JLabel();
+        Labdr = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(230, 196, 146));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        add(searchBoxJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 131, -1));
 
         jButton1.setBackground(new java.awt.Color(230, 196, 146));
         jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -135,6 +137,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, -1, -1));
 
         viewDetails.setBackground(new java.awt.Color(230, 196, 146));
         viewDetails.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -144,6 +147,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 viewDetailsActionPerformed(evt);
             }
         });
+        add(viewDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 693, -1, -1));
 
         respondJButton.setBackground(new java.awt.Color(230, 196, 146));
         respondJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -153,21 +157,14 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 respondJButtonActionPerformed(evt);
             }
         });
+        add(respondJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 693, 163, -1));
 
         jLabel2.setBackground(new java.awt.Color(0, 153, 153));
         jLabel2.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("!");
         jLabel2.setEnabled(false);
-
-        jButton6.setBackground(new java.awt.Color(230, 196, 146));
-        jButton6.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
-        jButton6.setText("Request / View Test");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 10, -1));
 
         jButton7.setBackground(new java.awt.Color(230, 196, 146));
         jButton7.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -177,31 +174,17 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 jButton7ActionPerformed(evt);
             }
         });
+        add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 690, -1, -1));
 
-        reportToGovernmentHHSDJButton.setBackground(new java.awt.Color(230, 196, 146));
-        reportToGovernmentHHSDJButton.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
-        reportToGovernmentHHSDJButton.setText("Report to Government Health and Human Services Department");
-        reportToGovernmentHHSDJButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton6.setBackground(new java.awt.Color(230, 196, 146));
+        jButton6.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        jButton6.setText("Request / View Test");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reportToGovernmentHHSDJButtonActionPerformed(evt);
+                jButton6ActionPerformed(evt);
             }
         });
-
-        jButton2.setBackground(new java.awt.Color(0, 24, 91));
-        jButton2.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Refresh");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        doctorNameLable.setBackground(new java.awt.Color(0, 153, 153));
-        doctorNameLable.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
-        doctorNameLable.setForeground(new java.awt.Color(51, 51, 51));
-        doctorNameLable.setText("<doctorName>");
-        doctorNameLable.setEnabled(false);
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(501, 693, 180, -1));
 
         viewVitalSignsJTable.setBackground(new java.awt.Color(230, 196, 146));
         viewVitalSignsJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -227,13 +210,46 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        viewVitalSignsJTable.setSelectionBackground(new java.awt.Color(102, 255, 102));
+        viewVitalSignsJTable.setSelectionForeground(new java.awt.Color(204, 0, 51));
         jScrollPane2.setViewportView(viewVitalSignsJTable);
+
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 900, 179));
+
+        jButton2.setBackground(new java.awt.Color(0, 24, 91));
+        jButton2.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Refresh");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, -1, -1));
+
+        reportToGovernmentHHSDJButton.setBackground(new java.awt.Color(230, 196, 146));
+        reportToGovernmentHHSDJButton.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
+        reportToGovernmentHHSDJButton.setText("Report to Government Health and Human Services Department");
+        reportToGovernmentHHSDJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reportToGovernmentHHSDJButtonActionPerformed(evt);
+            }
+        });
+        add(reportToGovernmentHHSDJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 750, -1, -1));
+
+        doctorNameLable.setBackground(new java.awt.Color(0, 153, 153));
+        doctorNameLable.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        doctorNameLable.setForeground(new java.awt.Color(51, 51, 51));
+        doctorNameLable.setText("<doctorName>");
+        doctorNameLable.setEnabled(false);
+        add(doctorNameLable, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 153));
         jLabel1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("Welcome");
         jLabel1.setEnabled(false);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -243,99 +259,25 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
         jLabel12.setText("MY PATIENTS LIST");
         jPanel1.add(jLabel12);
 
-        jButton3.setText("Send Text Mesaage to Patient");
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 25, 560, 50));
+
+        jButton3.setBackground(new java.awt.Color(230, 196, 146));
+        jButton3.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
+        jButton3.setText("Send Text Message to Patient");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 750, -1, -1));
 
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 170, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(227, 227, 227)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(doctorNameLable)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(592, 592, 592)
-                        .addComponent(searchBoxJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(jButton1)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(viewDetails)
-                .addGap(67, 67, 67)
-                .addComponent(respondJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton7)
-                .addGap(24, 24, 24))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(110, 110, 110))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(reportToGovernmentHHSDJButton)
-                .addGap(245, 245, 245))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(doctorNameLable)
-                    .addComponent(jLabel2))
-                .addGap(96, 96, 96)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(searchBoxJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(viewDetails)
-                    .addComponent(respondJButton)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton7)
-                        .addComponent(jButton6)))
-                .addGap(61, 61, 61)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(reportToGovernmentHHSDJButton)
-                    .addComponent(jButton3))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        Labdr.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/Doctorfinal.jpg")); // NOI18N
+        add(Labdr, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1030, 960));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -457,6 +399,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labdr;
     private javax.swing.JLabel Labtime;
     private javax.swing.JLabel doctorNameLable;
     private javax.swing.JButton jButton1;

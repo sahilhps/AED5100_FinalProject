@@ -93,13 +93,15 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         testRequestJTable = new javax.swing.JTable();
         assignToMeJButton = new javax.swing.JButton();
-        processJButton = new javax.swing.JButton();
-        refreshJButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
+        processJButton = new javax.swing.JButton();
+        refreshJButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 238, 170));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         testRequestJTable.setBackground(new java.awt.Color(240, 238, 170));
         testRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,7 +130,12 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        testRequestJTable.setColumnSelectionAllowed(false);
+        testRequestJTable.setSelectionBackground(new java.awt.Color(102, 255, 102));
+        testRequestJTable.setSelectionForeground(new java.awt.Color(204, 0, 0));
         jScrollPane1.setViewportView(testRequestJTable);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 880, 160));
 
         assignToMeJButton.setBackground(new java.awt.Color(0, 24, 91));
         assignToMeJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -139,6 +146,17 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 assignToMeJButtonActionPerformed(evt);
             }
         });
+        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 580, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel13.setBackground(new java.awt.Color(0, 51, 153));
+        jLabel13.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("LAB ASSISTANT");
+        jPanel1.add(jLabel13);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 830, 40));
 
         processJButton.setBackground(new java.awt.Color(0, 24, 91));
         processJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -149,6 +167,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 580, 110, -1));
 
         refreshJButton.setBackground(new java.awt.Color(0, 24, 91));
         refreshJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -159,63 +178,16 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 580, 90, 30));
 
-        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
-
-        jLabel13.setBackground(new java.awt.Color(0, 51, 153));
-        jLabel13.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("LAB ASSISTANT");
-        jPanel1.add(jLabel13);
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/labfinal.jpeg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1020, 920));
 
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 930, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(assignToMeJButton)
-                                .addGap(139, 139, 139)
-                                .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(119, 119, 119)
-                                .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(187, 187, 187))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(processJButton)
-                    .addComponent(assignToMeJButton)
-                    .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(73, Short.MAX_VALUE))
-        );
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 160, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
@@ -260,6 +232,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Labtime;
     private javax.swing.JButton assignToMeJButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

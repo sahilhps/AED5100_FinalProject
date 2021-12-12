@@ -69,21 +69,13 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(182, 145, 145));
-
-        jButton1.setBackground(new java.awt.Color(182, 145, 145));
-        jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
-        jButton1.setText("View All Reports List");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -93,38 +85,22 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel14.setText("HEALTH AND HUMAN SERVICES ADMIN");
         jPanel1.add(jLabel14);
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 43, 800, 63));
+
+        jButton1.setBackground(new java.awt.Color(182, 145, 145));
+        jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
+        jButton1.setText("View All Reports List");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 213, -1));
+
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(306, 306, 306)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(116, 116, 116)
-                .addComponent(jButton1)
-                .addContainerGap(210, Short.MAX_VALUE))
-        );
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 170, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
