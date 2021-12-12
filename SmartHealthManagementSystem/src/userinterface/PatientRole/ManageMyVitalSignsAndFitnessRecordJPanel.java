@@ -110,9 +110,7 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
     private void initComponents() {
 
         addJButton = new javax.swing.JButton();
-        viewJButton = new javax.swing.JButton();
         editJButton = new javax.swing.JButton();
-        deleteJButton = new javax.swing.JButton();
         showVitalSignsChartJButton = new javax.swing.JButton();
         viewResponseJButton = new javax.swing.JButton();
         sendToMyDoctorJButton = new javax.swing.JButton();
@@ -135,22 +133,9 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             }
         });
 
-        viewJButton.setBackground(new java.awt.Color(167, 221, 214));
-        viewJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        viewJButton.setText("View Details");
-        viewJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewJButtonActionPerformed(evt);
-            }
-        });
-
         editJButton.setBackground(new java.awt.Color(167, 221, 214));
         editJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         editJButton.setText("Edit Record");
-
-        deleteJButton.setBackground(new java.awt.Color(167, 221, 214));
-        deleteJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        deleteJButton.setText("Delete Record");
 
         showVitalSignsChartJButton.setBackground(new java.awt.Color(167, 221, 214));
         showVitalSignsChartJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -265,15 +250,11 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
                         .addGap(91, 91, 91)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(140, 140, 140)
                                 .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addGap(64, 64, 64)
                                 .addComponent(editJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(viewJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(deleteJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(47, 47, 47)
                                 .addComponent(showVitalSignsChartJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -298,15 +279,13 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addJButton)
-                    .addComponent(editJButton)
-                    .addComponent(deleteJButton)
-                    .addComponent(viewJButton))
-                .addGap(25, 25, 25)
+                    .addComponent(editJButton))
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewResponseJButton)
                     .addComponent(showFitnessChartJButton)
                     .addComponent(showVitalSignsChartJButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 25, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sendToMyDoctorJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(refreshJButton))
@@ -341,26 +320,6 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void viewJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewJButtonActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = viewVitalSignsJTable1.getSelectedRow();
-        if (selectedRow < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row from the table first to view detail", "Warning", JOptionPane.WARNING_MESSAGE);
-
-        }else{
-            
-            Record vs = (Record) viewVitalSignsJTable1.getValueAt(selectedRow, 0);
-            ViewUpdateRecordDetailsJPanel panel = new ViewUpdateRecordDetailsJPanel(userProcessContainer,userAccount,patientOrganization,enterprise,ecoSystem,vs);
-            userProcessContainer.add("ViewUpdateRecordDetailsJPanel", panel);
-            CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-            layout.next(userProcessContainer);
-            
-            
-        }
-        
-    
-    }//GEN-LAST:event_viewJButtonActionPerformed
 
     private void addJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJButtonActionPerformed
         // TODO add your handling code here:
@@ -452,7 +411,6 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addJButton;
     private javax.swing.JButton backJButton;
-    private javax.swing.JButton deleteJButton;
     private javax.swing.JButton editJButton;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JPanel jPanel1;
@@ -461,7 +419,6 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
     private javax.swing.JButton sendToMyDoctorJButton;
     private javax.swing.JButton showFitnessChartJButton;
     private javax.swing.JButton showVitalSignsChartJButton;
-    private javax.swing.JButton viewJButton;
     private javax.swing.JButton viewResponseJButton;
     private javax.swing.JTable viewVitalSignsJTable1;
     // End of variables declaration//GEN-END:variables
