@@ -36,44 +36,58 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel12 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
         submitResultJButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 238, 170));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel12.setText("Process Test Request");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 37, 278, -1));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 140, -1));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 140, -1));
 
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel1.setText("Test Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, -1, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 110, 40));
 
+        backJButton.setBackground(new java.awt.Color(0, 24, 91));
+        backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 215, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, -1, -1));
 
+        submitResultJButton.setBackground(new java.awt.Color(0, 24, 91));
+        submitResultJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        submitResultJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitResultJButton.setText("Submit Result");
         submitResultJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitResultJButtonActionPerformed(evt);
             }
         });
-        add(submitResultJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
+        add(submitResultJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel13.setBackground(new java.awt.Color(0, 51, 153));
+        jLabel13.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("TEST REQUEST");
+        jPanel1.add(jLabel13);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 620, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -102,7 +116,8 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton submitResultJButton;
     // End of variables declaration//GEN-END:variables
