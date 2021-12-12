@@ -15,6 +15,7 @@ import Business.Organisation.Organisation;
 import Business.RegisterRequest.RegisterRequest;
 import Business.Role.Role;
 import Business.UserAccount.UserAccount;
+import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -33,6 +34,8 @@ public class RegisterJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.ecoSystem = ecoSystem;
         populateNetworkCombox();
+        btnAmbulance.setEnabled(false);
+//        check();
     }
     
     private void populateNetworkCombox() {
@@ -100,6 +103,7 @@ public class RegisterJPanel extends javax.swing.JPanel {
         submitJButton = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        btnAmbulance = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -182,6 +186,14 @@ public class RegisterJPanel extends javax.swing.JPanel {
         jLabel10.setText("Wearable Device Health Management System");
         jLabel10.setOpaque(true);
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 12, -1, 55));
+
+        btnAmbulance.setText("Call Ambulance");
+        btnAmbulance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAmbulanceActionPerformed(evt);
+            }
+        });
+        add(btnAmbulance, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordJFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJFieldActionPerformed
@@ -233,6 +245,15 @@ public class RegisterJPanel extends javax.swing.JPanel {
         if (org != null) {
             populateRoleComboBox(org);
         }
+//        String a = 
+        if (organizationJComboBox.getSelectedItem().toString() == "Patient Department"){
+            btnAmbulance.setEnabled(true);
+//            System.out.println(organizationJComboBox.getSelectedItem());
+        }
+        else{
+            btnAmbulance.setEnabled(false);
+        }
+//        System.out.println(org);
     }//GEN-LAST:event_organizationJComboBoxActionPerformed
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
@@ -245,10 +266,20 @@ public class RegisterJPanel extends javax.swing.JPanel {
 
     private void roleJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleJComboBoxActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_roleJComboBoxActionPerformed
+
+    private void btnAmbulanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAmbulanceActionPerformed
+        // TODO add your handling code here:
+        AmbulanceJPanel panel = new AmbulanceJPanel(userProcessContainer);
+        userProcessContainer.add("AmbulanceJPanel", panel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_btnAmbulanceActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAmbulance;
     private javax.swing.JComboBox enterpriseJComboBox;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -267,4 +298,13 @@ public class RegisterJPanel extends javax.swing.JPanel {
     private javax.swing.JButton submitJButton;
     private javax.swing.JTextField userNameJTextField;
     // End of variables declaration//GEN-END:variables
+
+    private void check() {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Organisation org = (Organisation) organizationJComboBox.getSelectedItem();
+//        System.out.println(organizationJComboBox.getSelectedItem());
+        if (organizationJComboBox.getSelectedItem() == "Patient Department"){
+            btnAmbulance.setEnabled(true);
+        }
+    }
 }
