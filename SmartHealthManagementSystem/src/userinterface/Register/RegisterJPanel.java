@@ -125,7 +125,6 @@ public class RegisterJPanel extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         Labtime = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(250, 199, 151));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -241,7 +240,6 @@ public class RegisterJPanel extends javax.swing.JPanel {
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
         add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 170, 40));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 430, 590));
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordJFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJFieldActionPerformed
@@ -330,7 +328,6 @@ public class RegisterJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel Labtime;
     private javax.swing.JButton btnAmbulance;
     private javax.swing.JComboBox enterpriseJComboBox;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

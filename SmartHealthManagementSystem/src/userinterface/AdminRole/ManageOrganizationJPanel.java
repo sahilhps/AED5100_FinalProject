@@ -97,7 +97,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Name"
+                "Name", "ID"
             }
         ) {
             boolean[] canEdit = new boolean [] {
