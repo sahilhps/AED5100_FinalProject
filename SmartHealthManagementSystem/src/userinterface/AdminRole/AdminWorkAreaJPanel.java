@@ -82,7 +82,6 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         labAdmin = new javax.swing.JLabel();
         Labtime = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        Labadmin = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
@@ -170,9 +169,6 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(0, 51, 102));
         jLabel5.setText("Modify the organization ");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
-
-        Labadmin.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/admin.jpg")); // NOI18N
-        add(Labadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 890));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageUserAccountJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageUserAccountJButtonActionPerformed
@@ -211,7 +207,6 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Labadmin;
     private javax.swing.JLabel Labtime;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
