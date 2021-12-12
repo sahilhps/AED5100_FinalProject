@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class CreateMyProfileJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -126,6 +126,11 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
         emailJTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 emailJTextFieldFocusLost(evt);
+            }
+        });
+        emailJTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailJTextFieldActionPerformed(evt);
             }
         });
         add(emailJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 182, -1));
@@ -332,12 +337,12 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
                 
                 Patient patient = patientOrganization.getPatientDirectory().createPtient(userAccount.getName());
                 userAccount.setPatient(patient);
-                patient.setPatientName(userAccount.getName());
+                patient.setpatientName(userAccount.getName());
                 patient.setAge(age);
                 patient.setAreaCode(areaCode);
                 patient.setEmailAddress(emailAddress);
-                patient.setPhoneNumber(phoneNumber);
-                patient.setStreetAddress(streetAddress);
+                patient.setphoneNumber(phoneNumber);
+                patient.setstreetAddress(streetAddress);
                 patient.setTown(town);
                 patient.setZipCode(zipCode);
                 patient.setMydoctor((UserAccount)primaryDoctorNameJComboBox.getSelectedItem());
@@ -359,6 +364,10 @@ public class CreateMyProfileJPanel extends javax.swing.JPanel {
     private void primaryDoctorNameJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primaryDoctorNameJComboBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_primaryDoctorNameJComboBoxActionPerformed
+
+    private void emailJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailJTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailJTextFieldActionPerformed
 
     public void resetFields(){
         

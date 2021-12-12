@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ViewUpdateMyProfileJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -37,15 +37,15 @@ public class ViewUpdateMyProfileJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.patient=userAccount.getPatient();
         
-        nameJTextField.setText(patient.getPatientName());
-        patientIDJTextField.setText(String.valueOf(patient.getPatientID()));
+        nameJTextField.setText(patient.getpatientName());
+        patientIDJTextField.setText(String.valueOf(patient.getpatientID()));
         ageJTextField.setText(String.valueOf(patient.getAge()));
-        streetAddressJTextField.setText(patient.getStreetAddress());
+        streetAddressJTextField.setText(patient.getstreetAddress());
         cityJTextField.setText(patient.getTown());
         zipCodeJTextField.setText(String.valueOf(patient.getZipCode()));
         emailJTextField.setText(patient.getEmailAddress());
         areaCodeJTextField.setText(String.valueOf(patient.getAreaCode()));
-        numberJTextField.setText(String.valueOf(patient.getPhoneNumber()));
+        numberJTextField.setText(String.valueOf(patient.getphoneNumber()));
         myDoctorJTextField.setText(patient.getMyDoctor());
         
         
@@ -295,15 +295,15 @@ public class ViewUpdateMyProfileJPanel extends javax.swing.JPanel {
     private void updateJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateJButtonActionPerformed
         // TODO add your handling code here:
         
-        nameJTextField.setText(patient.getPatientName());
-        patientIDJTextField.setText(String.valueOf(patient.getPatientID()));
+        nameJTextField.setText(patient.getpatientName());
+        patientIDJTextField.setText(String.valueOf(patient.getpatientID()));
         ageJTextField.setText(String.valueOf(patient.getAge()));
-        streetAddressJTextField.setText(patient.getStreetAddress());
+        streetAddressJTextField.setText(patient.getstreetAddress());
         cityJTextField.setText(patient.getTown());
         zipCodeJTextField.setText(String.valueOf(patient.getZipCode()));
         emailJTextField.setText(patient.getEmailAddress());
         areaCodeJTextField.setText(String.valueOf(patient.getAreaCode()));
-        numberJTextField.setText(String.valueOf(patient.getPhoneNumber()));
+        numberJTextField.setText(String.valueOf(patient.getphoneNumber()));
         myDoctorJTextField.setText(patient.getMyDoctor());
         
         
@@ -354,12 +354,12 @@ public class ViewUpdateMyProfileJPanel extends javax.swing.JPanel {
                 
                 Patient patient = patientOrganization.getPatientDirectory().createPtient(userAccount.getName());
                 userAccount.setPatient(patient);
-                patient.setPatientName(userAccount.getName());
+                patient.setpatientName(userAccount.getName());
                 patient.setAge(age);
                 patient.setAreaCode(areaCode);
                 patient.setEmailAddress(emailAddress);
-                patient.setPhoneNumber(phoneNumber);
-                patient.setStreetAddress(streetAddress);
+                patient.setphoneNumber(phoneNumber);
+                patient.setstreetAddress(streetAddress);
                 patient.setTown(town);
                 patient.setZipCode(zipCode);
 //                patient.setMyDoctor(doc);

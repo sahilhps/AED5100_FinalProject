@@ -23,10 +23,9 @@ import javax.swing.JPanel;
  */
 public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
-//    private DoctorOrganization organization;
-//    private EcoSystem ecoSystem;
+
     private Enterprise enterprise;
-//    private UserAccount userAccount;
+
     private PatientDoctorWorkRequest patientDoctorWorkRequest;
     /**
      * Creates new form FitnessRecordRespondJPanel
@@ -111,19 +110,17 @@ public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         
-//        userProcessContainer.remove(this);
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        layout.previous(userProcessContainer);
+
         
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-       //PatientDoctorWorkRequest request = new PatientDoctorWorkRequest();
+       
   
-        patientDoctorWorkRequest.setResponMessage(respondJTextArea.getText());
-        patientDoctorWorkRequest.setRespondStatus("Complete");
-        patientDoctorWorkRequest.setDoctorResponseMessage(respondJTextArea.getText());
+        patientDoctorWorkRequest.setresPondtoMess(respondJTextArea.getText());
+        patientDoctorWorkRequest.setstattoRespond("Complete");
+        patientDoctorWorkRequest.setrespondFromDoctor(respondJTextArea.getText());
         JOptionPane.showMessageDialog(null, "Success! ");
         
          
@@ -138,7 +135,7 @@ public class FitnessRecordRespondJPanel extends javax.swing.JPanel {
 
             if (org != null) {
                 org.getWorkQueue().getWorkRequestList().add(patientDoctorWorkRequest);
-               // userAccount.getWorkQueue().getWorkRequestList().add(request);
+               
             }
     }//GEN-LAST:event_jButton1ActionPerformed
 

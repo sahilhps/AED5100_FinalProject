@@ -28,19 +28,19 @@ public class Patient {
         this.recordHistory = recordHistory;
     }
 
-    public String getPatientName() {
+    public String getpatientName() {
         return patientName;
     }
 
-    public void setPatientName(String patientName) {
+    public void setpatientName(String patientName) {
         this.patientName = patientName;
     }
 
-    public int getPatientID() {
+    public int getpatientID() {
         return patientID;
     }
 
-    public void setPatientID(int patientID) {
+    public void setpatientID(int patientID) {
         this.patientID = patientID;
     }
 
@@ -52,11 +52,11 @@ public class Patient {
         this.age = age;
     }
 
-    public String getStreetAddress() {
+    public String getstreetAddress() {
         return streetAddress;
     }
 
-    public void setStreetAddress(String streetAddress) {
+    public void setstreetAddress(String streetAddress) {
         this.streetAddress = streetAddress;
     }
 
@@ -92,11 +92,11 @@ public class Patient {
         this.areaCode = areaCode;
     }
 
-    public int getPhoneNumber() {
+    public int getphoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setphoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -146,7 +146,7 @@ public class Patient {
     private UserAccount mypatient;
     private RecordHistory recordHistory;
     
-       
+   
     @Override
     public String toString() {
         return patientName; 

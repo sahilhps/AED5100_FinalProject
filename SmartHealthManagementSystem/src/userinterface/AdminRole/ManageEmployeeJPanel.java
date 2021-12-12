@@ -59,8 +59,8 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         if (organization instanceof PatientOrganisation) {
             for (Patient patient : organization.getPatientDirectory().getPatientList()) {
                 Object[] row = new Object[2];
-                row[0] = patient.getPatientID();
-                row[1] = patient.getPatientName();
+                row[0] = patient.getpatientID();
+                row[1] = patient.getpatientName();
                 model.addRow(row);
 
             }

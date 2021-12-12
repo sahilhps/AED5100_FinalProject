@@ -24,7 +24,7 @@ import org.jfree.data.xy.XYDataset;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class VitalSignsChartJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -46,7 +46,7 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
         this.patient = userAccount.getPatient();
         
         XYDataset data = createXYDataset();
-        JFreeChart chart = ChartFactory.createTimeSeriesChart(patient.getPatientName(), "Time", "Data", data);
+        JFreeChart chart = ChartFactory.createTimeSeriesChart(patient.getpatientName(), "Time", "Data", data);
         
         ChartPanel chartPanel = new ChartPanel(chart);
         this.add(chartPanel, BorderLayout.CENTER);
@@ -61,7 +61,7 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
        
        for(Record vitalSign: patient.getRecordHistory().getRecordList())
        {
-           s1.add(new Second(vitalSign.getDate()), vitalSign.getRespiratoryRate());
+           s1.add(new Second(vitalSign.getDate()), vitalSign.getbreatheRate());
        }
        data.addSeries(s1);
        
@@ -69,7 +69,7 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
        
        for(Record vitalSign: patient.getRecordHistory().getRecordList())
        {
-           s2.add(new Second(vitalSign.getDate()), vitalSign.getHeartRate());
+           s2.add(new Second(vitalSign.getDate()), vitalSign.getheartrate());
        }
        data.addSeries(s2);
 
@@ -78,7 +78,7 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
        
        for(Record vitalSign: patient.getRecordHistory().getRecordList())
        {
-           s3.add(new Second(vitalSign.getDate()), vitalSign.getSystolicBloodPressure());
+           s3.add(new Second(vitalSign.getDate()), vitalSign.getsystalicBP());
        }
        data.addSeries(s3);
        
@@ -87,7 +87,7 @@ public class VitalSignsChartJPanel extends javax.swing.JPanel {
        
        for(Record vitalSign: patient.getRecordHistory().getRecordList())
        {
-           s4.add(new Second(vitalSign.getDate()), vitalSign.getWeightInPounds());
+           s4.add(new Second(vitalSign.getDate()), vitalSign.getweight());
        }
        data.addSeries(s4);
        

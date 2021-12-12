@@ -34,44 +34,44 @@ public class PatientDoctorWorkRequest extends WorkRequest{
         this.Record = Record;
     }
 
-    public String getTestResult() {
-        return testResult;
+    public String gettestingResult() {
+        return testingResult;
     }
 
-    public void setTestResult(String testResult) {
-        this.testResult = testResult;
+    public void settestingResult(String testingResult) {
+        this.testingResult = testingResult;
     }
 
-    public String getLabStatus() {
-        return labStatus;
+    public String getstatlab() {
+        return statlab;
     }
 
-    public void setLabStatus(String labStatus) {
-        this.labStatus = labStatus;
+    public void setstatlab(String statlab) {
+        this.statlab = statlab;
     }
 
-    public String getPreStatus() {
-        return preStatus;
+    public String getpreStat() {
+        return preStat;
     }
 
-    public void setPreStatus(String preStatus) {
-        this.preStatus = preStatus;
+    public void setpreStat(String preStat) {
+        this.preStat = preStat;
     }
 
-    public String getRespondStatus() {
-        return respondStatus;
+    public String getstattoRespond() {
+        return stattoRespond;
     }
 
-    public void setRespondStatus(String respondStatus) {
-        this.respondStatus = respondStatus;
+    public void setstattoRespond(String stattoRespond) {
+        this.stattoRespond = stattoRespond;
     }
 
-    public String getGovStatus() {
-        return govStatus;
+    public String getstatGov() {
+        return statGov;
     }
 
-    public void setGovStatus(String govStatus) {
-        this.govStatus = govStatus;
+    public void setstatGov(String statGov) {
+        this.statGov = statGov;
     }
 
     public String getDrugStatus() {
@@ -82,36 +82,36 @@ public class PatientDoctorWorkRequest extends WorkRequest{
         this.drugStatus = drugStatus;
     }
 
-    public String getVsNormalorNot() {
-        return vsNormalorNot;
+    public String getisisNormal() {
+        return isisNormal;
     }
 
-    public void setVsNormalorNot(String vsNormalorNot) {
-        this.vsNormalorNot = vsNormalorNot;
+    public void setisisNormal(String isisNormal) {
+        this.isisNormal = isisNormal;
     }
 
-    public String getFtNormalorNot() {
-        return ftNormalorNot;
+    public String getFtisNormal() {
+        return ftisNormal;
     }
 
-    public void setFtNormalorNot(String ftNormalorNot) {
-        this.ftNormalorNot = ftNormalorNot;
+    public void setFtisNormal(String ftisNormal) {
+        this.ftisNormal = ftisNormal;
     }
 
-    public String getPatientName() {
+    public String getpatientName() {
         return patientName;
     }
 
-    public void setPatientName(String patientName) {
+    public void setpatientName(String patientName) {
         this.patientName = patientName;
     }
 
-    public String getResponMessage() {
-        return responMessage;
+    public String getresPondtoMess() {
+        return resPondtoMess;
     }
 
-    public void setResponMessage(String responMessage) {
-        this.responMessage = responMessage;
+    public void setresPondtoMess(String resPondtoMess) {
+        this.resPondtoMess = resPondtoMess;
     }
 
     public String getLabReceiver() {
@@ -122,49 +122,49 @@ public class PatientDoctorWorkRequest extends WorkRequest{
         this.labReceiver = labReceiver;
     }
 
-    public String getDrugName() {
-        return drugName;
+    public String getnameOfDrug() {
+        return nameOfDrug;
     }
 
-    public void setDrugName(String drugName) {
-        this.drugName = drugName;
+    public void setnameOfDrug(String nameOfDrug) {
+        this.nameOfDrug = nameOfDrug;
     }
 
-    public String getDrugQuantity() {
-        return drugQuantity;
+    public String getquantofDrug() {
+        return quantofDrug;
     }
 
-    public void setDrugQuantity(String drugQuantity) {
-        this.drugQuantity = drugQuantity;
+    public void setquantofDrug(String quantofDrug) {
+        this.quantofDrug = quantofDrug;
     }
 
-    public String getDoctorResponseMessage() {
-        return doctorResponseMessage;
+    public String getrespondFromDoctor() {
+        return respondFromDoctor;
     }
 
-    public void setDoctorResponseMessage(String doctorResponseMessage) {
-        this.doctorResponseMessage = doctorResponseMessage;
+    public void setrespondFromDoctor(String respondFromDoctor) {
+        this.respondFromDoctor = respondFromDoctor;
     }
     
-    private String testResult;
+    private String testingResult;
     
-    private String labStatus;
-    private String preStatus;
-    private String respondStatus;
-    private String govStatus;
+    private String statlab;
+    private String preStat;
+    private String stattoRespond;
+    private String statGov;
     private String drugStatus;
     
-    private String vsNormalorNot;
-    private String ftNormalorNot;
+    private String isisNormal;
+    private String ftisNormal;
     
     private Date date;
     private String patientName;
-    private String responMessage;
+    private String resPondtoMess;
     private String labReceiver;
     
-    private String drugName;
-    private String drugQuantity;
-    private String doctorResponseMessage;
+    private String nameOfDrug;
+    private String quantofDrug;
+    private String respondFromDoctor;
 
     @Override
     public Date getDate() {

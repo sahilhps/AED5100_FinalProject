@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ManageMyProfileJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    

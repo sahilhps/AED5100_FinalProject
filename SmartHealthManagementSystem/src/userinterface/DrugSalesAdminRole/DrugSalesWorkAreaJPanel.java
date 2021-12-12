@@ -54,11 +54,11 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
             PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) request;
             Object[] row = new Object[6];
             row[0] = patientDoctorWorkRequest;
-            row[1] = patientDoctorWorkRequest.getDrugName();
-            row[2] = patientDoctorWorkRequest.getDrugQuantity();
+            row[1] = patientDoctorWorkRequest.getnameOfDrug();
+            row[2] = patientDoctorWorkRequest.getquantofDrug();
             row[3] = patientDoctorWorkRequest.getSender();
             row[4] = patientDoctorWorkRequest.getReceiveEnterprise();
-            row[5] = patientDoctorWorkRequest.getPreStatus();
+            row[5] = patientDoctorWorkRequest.getpreStat();
             
             model.addRow(row);
             }
@@ -176,7 +176,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please select one row");
         }
         PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) drugRequestJTable.getValueAt(selectedRow, 0);
-        patientDoctorWorkRequest.setPreStatus("Accept");
+        patientDoctorWorkRequest.setpreStat("Accept");
         populateTable();
     }//GEN-LAST:event_jButton1ActionPerformed
 

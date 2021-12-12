@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import Business.Organisation.Organisation;
 /**
  *
- * @author  raunak
+ * @author  Sahil Sonawane
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     

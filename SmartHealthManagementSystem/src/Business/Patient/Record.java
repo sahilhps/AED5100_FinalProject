@@ -12,71 +12,71 @@ import java.util.Date;
  * @author Sahil Sonawane <your.name at your.org>
  */
 public class Record {
-    private float respiratoryRate;
-    private int moveTime;
-    private int excerciseTime;
-    private int totalTime;
-    private float heartRate;
-    private float systolicBloodPressure;
-    private float weightInPounds;
+    private float breatheRate;
+    private int movementClock;
+    private int workoutTime;
+    private int totTime;
+    private float heartrate;
+    private float systalicBP;
+    private float weight;
     private Date date;
-    private String normalOrNot;
+    private String isNormal;
     private int standTime;
 
-    public float getRespiratoryRate() {
-        return respiratoryRate;
+    public float getbreatheRate() {
+        return breatheRate;
     }
 
-    public void setRespiratoryRate(float respiratoryRate) {
-        this.respiratoryRate = respiratoryRate;
+    public void setbreatheRate(float breatheRate) {
+        this.breatheRate = breatheRate;
     }
 
-    public int getMoveTime() {
-        return moveTime;
+    public int getmovementClock() {
+        return movementClock;
     }
 
-    public void setMoveTime(int moveTime) {
-        this.moveTime = moveTime;
+    public void setmovementClock(int movementClock) {
+        this.movementClock = movementClock;
     }
 
-    public int getExcerciseTime() {
-        return excerciseTime;
+    public int getworkoutTime() {
+        return workoutTime;
     }
 
-    public void setExcerciseTime(int excerciseTime) {
-        this.excerciseTime = excerciseTime;
+    public void setworkoutTime(int workoutTime) {
+        this.workoutTime = workoutTime;
     }
 
-    public int getTotalTime() {
-        return totalTime;
+    public int gettotTime() {
+        return totTime;
     }
 
-    public void setTotalTime(int totalTime) {
-        this.totalTime = totalTime;
+    public void settotTime(int totTime) {
+        this.totTime = totTime;
     }
 
-    public float getHeartRate() {
-        return heartRate;
+    public float getheartrate() {
+        return heartrate;
     }
 
-    public void setHeartRate(float heartRate) {
-        this.heartRate = heartRate;
+    public void setheartrate(float heartrate) {
+        this.heartrate = heartrate;
     }
 
-    public float getSystolicBloodPressure() {
-        return systolicBloodPressure;
+    public float getsystalicBP() {
+        return systalicBP;
     }
 
-    public void setSystolicBloodPressure(float systolicBloodPressure) {
-        this.systolicBloodPressure = systolicBloodPressure;
+    public void setsystalicBP(float systalicBP) {
+        this.systalicBP = systalicBP;
     }
 
-    public float getWeightInPounds() {
-        return weightInPounds;
+    public float getweight() {
+        return weight;
     }
 
-    public void setWeightInPounds(float weightInPounds) {
-        this.weightInPounds = weightInPounds;
+    public void setweight(float weight) {
+        this.weight = weight;
     }
 
     public Date getDate() {
@@ -87,12 +87,12 @@ public class Record {
         this.date = date;
     }
 
-    public String getNormalOrNot() {
-        return normalOrNot;
+    public String getisNormal() {
+        return isNormal;
     }
 
-    public void setNormalOrNot(String normalOrNot) {
-        this.normalOrNot = normalOrNot;
+    public void setisNormal(String isNormal) {
+        this.isNormal = isNormal;
     }
 
     public int getStandTime() {
@@ -103,12 +103,12 @@ public class Record {
         this.standTime = standTime;
     }
 
-    public String getNeedMoreExcerciseOrNot() {
-        return needMoreExcerciseOrNot;
+    public String getneedsToWorkout() {
+        return needsToWorkout;
     }
 
-    public void setNeedMoreExcerciseOrNot(String needMoreExcerciseOrNot) {
-        this.needMoreExcerciseOrNot = needMoreExcerciseOrNot;
+    public void setneedsToWorkout(String needsToWorkout) {
+        this.needsToWorkout = needsToWorkout;
     }
-    private String needMoreExcerciseOrNot;
+    private String needsToWorkout;
 }

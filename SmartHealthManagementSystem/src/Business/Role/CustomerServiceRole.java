@@ -11,16 +11,15 @@ import Business.UserAccount.UserAccount;
 import userinterface.CustomerRole.CustomerAreaJPanel;
 import javax.swing.JPanel;
 
-//import Business.EcoSystem;
+
 import Business.Enterprise.Enterprise;
 import Business.Organisation.CustomerServiceOrganisation;
-//import Business.Organization.Organization;
-//import Business.UserAccount.UserAccount;
+
 import userinterface.CustomerServiceRole.CustomerServiceWorkAreaJPanel;
 import javax.swing.JPanel;
 /**
  *
- * @author raunak
+ * @author Sahil Sonawane
  */
 public class CustomerServiceRole extends Role{
 

@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class PatientRole extends Role{
     @Override
