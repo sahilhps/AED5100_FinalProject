@@ -13,8 +13,14 @@ import Business.Role.AdminRole;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -27,9 +33,21 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEnterpriseAdminJPanel
      */
+    Timer timer;
     public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem ecoSystem) {
         initComponents();
-        
+        ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.ecoSystem = ecoSystem;
 
@@ -98,6 +116,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         enterpriseJComboBox = new javax.swing.JComboBox();
         jPanel1 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(164, 213, 225));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -204,6 +223,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         jPanel1.add(jLabel12);
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 560, 60));
+
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, 170, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createEnterpriseAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createEnterpriseAdminActionPerformed
@@ -262,6 +286,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DeleteJButton;
+    private javax.swing.JLabel Labtime;
     private javax.swing.JButton backJButton;
     private javax.swing.JButton createEnterpriseAdmin;
     private javax.swing.JComboBox enterpriseJComboBox;
