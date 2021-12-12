@@ -49,8 +49,12 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel13 = new javax.swing.JLabel();
         btnbook = new javax.swing.JButton();
+        LabAmb = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(250, 199, 151));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        add(txtlocation, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 560, 335, 33));
+        add(txtInjury, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 620, 335, 71));
 
         btnBack.setBackground(new java.awt.Color(0, 24, 91));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -60,6 +64,7 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 780, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -68,22 +73,30 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
         jLabel11.setText("BOOK AMBULANCE");
         jPanel1.add(jLabel11);
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 628, 60));
+
         jLabel8.setFont(new java.awt.Font("Raanana", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 51, 51));
         jLabel8.setText("In case of emergency, call (413)1560981");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, 20));
 
         jLabel9.setFont(new java.awt.Font("PT Serif", 0, 14)); // NOI18N
         jLabel9.setText("Provide your location");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 570, -1, 20));
 
         jLabel10.setFont(new java.awt.Font("Raanana", 3, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 51, 204));
         jLabel10.setText("Provide all the inputs in order to pre-book the ambulance!!");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, -1, 20));
 
         jLabel12.setFont(new java.awt.Font("PT Serif", 0, 14)); // NOI18N
         jLabel12.setText("Provide detailed description");
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 640, -1, 20));
+        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 720, 181, -1));
 
         jLabel13.setFont(new java.awt.Font("PT Serif", 0, 14)); // NOI18N
         jLabel13.setText("Provide booking date");
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 720, -1, 20));
 
         btnbook.setBackground(new java.awt.Color(0, 24, 91));
         btnbook.setForeground(new java.awt.Color(255, 255, 255));
@@ -93,75 +106,11 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
                 btnbookActionPerformed(evt);
             }
         });
+        add(btnbook, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 780, 166, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 81, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 628, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(104, 104, 104))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(297, 297, 297))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel9)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btnBack)
-                                .addComponent(jLabel13)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtlocation, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
-                                    .addComponent(txtInjury)
-                                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(43, 43, 43)
-                                .addComponent(btnbook, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(201, 201, 201)
-                        .addComponent(jLabel10)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(136, 136, 136)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtlocation, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(txtInjury, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(71, 71, 71)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnbook)
-                    .addComponent(btnBack))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        LabAmb.setFont(new java.awt.Font("PT Serif", 0, 14)); // NOI18N
+        LabAmb.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/ambulance.gif")); // NOI18N
+        add(LabAmb, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 970, 430));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -177,6 +126,7 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabAmb;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnbook;
     private com.toedter.calendar.JDateChooser jDateChooser1;

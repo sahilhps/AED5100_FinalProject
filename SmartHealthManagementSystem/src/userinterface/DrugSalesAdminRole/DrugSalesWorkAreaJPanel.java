@@ -101,8 +101,10 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         Labtime = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(239, 147, 147));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         drugRequestJTable.setBackground(new java.awt.Color(239, 147, 147));
         drugRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -121,7 +123,11 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        drugRequestJTable.setSelectionBackground(new java.awt.Color(51, 255, 51));
+        drugRequestJTable.setSelectionForeground(new java.awt.Color(255, 0, 51));
         jScrollPane2.setViewportView(drugRequestJTable);
+
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 930, 200));
 
         jButton2.setBackground(new java.awt.Color(0, 24, 91));
         jButton2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -132,6 +138,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 750, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 24, 91));
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -142,6 +149,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 750, 110, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -151,52 +159,15 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setText("DRUG SALES ADMIN");
         jPanel1.add(jLabel13);
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 39, 623, 55));
+
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, 170, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(169, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton2)
-                        .addGap(177, 177, 177)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(248, 248, 248))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(150, 150, 150))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 930, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
-                .addGap(135, 135, 135))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(218, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(191, Short.MAX_VALUE)))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/drugs.jpg")); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 890));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -231,6 +202,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable drugRequestJTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;

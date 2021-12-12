@@ -110,12 +110,14 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
         viewFeedbackFromEquipmentManufactureJTable = new javax.swing.JTable();
         viewDetailsJButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        Labtime = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        Labtime = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(228, 204, 243));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewFeedbackFromEquipmentManufactureJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -133,7 +135,11 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+        viewFeedbackFromEquipmentManufactureJTable.setSelectionBackground(new java.awt.Color(0, 204, 102));
+        viewFeedbackFromEquipmentManufactureJTable.setSelectionForeground(new java.awt.Color(255, 51, 0));
         jScrollPane2.setViewportView(viewFeedbackFromEquipmentManufactureJTable);
+
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 700, 200));
 
         viewDetailsJButton.setBackground(new java.awt.Color(0, 24, 91));
         viewDetailsJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -144,6 +150,7 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
                 viewDetailsJButtonActionPerformed(evt);
             }
         });
+        add(viewDetailsJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 780, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 24, 91));
         jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -154,6 +161,12 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 780, 110, -1));
+
+        Labtime.setBackground(new java.awt.Color(228, 204, 243));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(593, 120, 116, 33));
 
         jButton2.setBackground(new java.awt.Color(0, 24, 91));
         jButton2.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -164,6 +177,7 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 780, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -173,51 +187,10 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setText("CUSTOMER SERVICES");
         jPanel1.add(jLabel13);
 
-        Labtime.setBackground(new java.awt.Color(228, 204, 243));
-        Labtime.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 34, 475, 55));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(188, 188, 188)
-                        .addComponent(jButton2)
-                        .addGap(60, 60, 60)
-                        .addComponent(viewDetailsJButton)
-                        .addGap(48, 48, 48)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 475, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(144, 144, 144)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(136, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(160, 160, 160))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(viewDetailsJButton)
-                    .addComponent(jButton2))
-                .addContainerGap(201, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/CS.jpg")); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 990, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void viewDetailsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsJButtonActionPerformed
@@ -269,6 +242,7 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel Labtime;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
