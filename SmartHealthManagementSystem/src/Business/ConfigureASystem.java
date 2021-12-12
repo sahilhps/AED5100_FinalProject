@@ -21,7 +21,7 @@ import Business.UserAccount.UserAccount;
  */
 public class ConfigureASystem {
     
-    public static EcoSystem configureABusiness(){
+    public static EcoSystem configure(){
         
        EcoSystem ecoSystem = EcoSystem.getInstance();
         
