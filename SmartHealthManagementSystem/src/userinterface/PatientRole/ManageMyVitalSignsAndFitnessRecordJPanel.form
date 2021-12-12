@@ -35,18 +35,12 @@
                       <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
                               <Component id="addJButton" min="-2" pref="171" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               <Component id="editJButton" min="-2" pref="141" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jScrollPane3" alignment="0" min="-2" pref="709" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="viewJButton" min="-2" pref="146" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="deleteJButton" min="-2" pref="163" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="jScrollPane3" alignment="0" min="-2" pref="709" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                               <Component id="showVitalSignsChartJButton" min="-2" pref="183" max="-2" attributes="0"/>
@@ -79,16 +73,14 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="addJButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="editJButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="deleteJButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="viewJButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="viewResponseJButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="showFitnessChartJButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="showVitalSignsChartJButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" pref="25" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="sendToMyDoctorJButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="refreshJButton" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -115,20 +107,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addJButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="viewJButton">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d6" green="dd" red="a7" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Grande" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="View Details"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewJButtonActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="editJButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -138,17 +116,6 @@
           <Font name="Lucida Grande" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Edit Record"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="deleteJButton">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d6" green="dd" red="a7" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Grande" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Delete Record"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="showVitalSignsChartJButton">

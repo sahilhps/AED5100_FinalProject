@@ -37,11 +37,12 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         submitResultJButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 238, 170));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -53,10 +54,6 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
         });
         add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 140, -1));
 
-        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
-        jLabel1.setText("Test Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 110, 40));
-
         backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -67,6 +64,10 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
+        jLabel1.setText("Test Result");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 110, 40));
 
         submitResultJButton.setBackground(new java.awt.Color(0, 24, 91));
         submitResultJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -87,7 +88,10 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
         jLabel13.setText("TEST REQUEST");
         jPanel1.add(jLabel13);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 620, 60));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 620, 60));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/labfinal.jpeg")); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 770));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -117,6 +121,7 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton submitResultJButton;
