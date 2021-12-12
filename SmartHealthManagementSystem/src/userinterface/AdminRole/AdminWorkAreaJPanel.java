@@ -27,7 +27,21 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     public AdminWorkAreaJPanel(JPanel userProcessContainer) {
         initComponents();
         
-        ActionListener actionlistener = new ActionListener() {
+
+      
+        //valueLabel.setText();
+    }
+    
+    Enterprise enterprise;
+    UserAccount ua;
+
+    /**
+     * Creates new form AdminWorkAreaJPanel
+     */
+    public AdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise,UserAccount ua) {
+        initComponents();
+        
+                ActionListener actionlistener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
         Date date = new Date();
@@ -41,18 +55,6 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         timer.setInitialDelay(0);
         timer.start();
         this.userProcessContainer = userProcessContainer;
-      
-        //valueLabel.setText();
-    }
-    
-    Enterprise enterprise;
-    UserAccount ua;
-
-    /**
-     * Creates new form AdminWorkAreaJPanel
-     */
-    public AdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise,UserAccount ua) {
-        initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
         this.ua = ua;
@@ -158,10 +160,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 820, 50));
 
-        Labtime.setBackground(new java.awt.Color(255, 255, 255));
-        Labtime.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
-        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 190, 40));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 130, 170, 40));
 
         jLabel5.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 102));
