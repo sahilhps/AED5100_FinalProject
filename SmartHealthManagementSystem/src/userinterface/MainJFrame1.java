@@ -336,11 +336,16 @@ public class MainJFrame1 extends javax.swing.JFrame {
 
     private void registerJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerJButtonActionPerformed
         // TODO add your handling code here:
+        if (jCheckBox1.isSelected() ){
         RegisterJPanel registerJPanel = new RegisterJPanel(userProcessContainer, system);
         CardLayout crdLyt = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("RegisterJPanel", registerJPanel);
         crdLyt.next(userProcessContainer);
- 
+            jCheckBox1.setSelected(false);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Please Agree to the terms and conditions");
+        }
     }//GEN-LAST:event_registerJButtonActionPerformed
 
     /**
