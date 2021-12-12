@@ -10,7 +10,13 @@ import Business.Enterprise.Enterprise;
 import Business.Organisation.HealthandHumanServicesOrganisation;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /**
  *
@@ -32,8 +38,21 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form HHSAdminWorkAreaJPanel
      */
+    Timer timer;
     public HHSAdminWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, HealthandHumanServicesOrganisation organization, Enterprise enterprise, EcoSystem ecoSystem) {
         initComponents();
+                ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
         this.organization = (HealthandHumanServicesOrganisation)organization;
@@ -53,6 +72,7 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(182, 145, 145));
 
@@ -73,6 +93,10 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel14.setText("HEALTH AND HUMAN SERVICES ADMIN");
         jPanel1.add(jLabel14);
 
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -85,13 +109,19 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(306, 306, 306)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(183, 183, 183)
+                .addGap(27, 27, 27)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(116, 116, 116)
                 .addComponent(jButton1)
                 .addContainerGap(210, Short.MAX_VALUE))
         );
@@ -107,6 +137,7 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JPanel jPanel1;
