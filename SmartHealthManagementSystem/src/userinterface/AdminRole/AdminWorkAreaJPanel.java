@@ -8,17 +8,38 @@ import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import Business.Organisation.Organisation;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.Timer;
 /**
  *
  * @author  raunak
  */
+    
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     JPanel userProcessContainer;
-    
+    Timer timer;
     /** Creates new form AdminWorkAreaJPanel */
     public AdminWorkAreaJPanel(JPanel userProcessContainer) {
         initComponents();
+        
+        ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
       
         //valueLabel.setText();
@@ -53,11 +74,12 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         manageEmpJButton = new javax.swing.JButton();
         manageRegisterRequestJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         labAdmin = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
@@ -71,7 +93,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageUserAccountJButtonActionPerformed(evt);
             }
         });
-        add(manageUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, 30));
+        add(manageUserAccountJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, -1, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
@@ -99,7 +121,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmpJButtonActionPerformed(evt);
             }
         });
-        add(manageEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, -1, 30));
+        add(manageEmpJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, 30));
 
         manageRegisterRequestJButton.setBackground(new java.awt.Color(255, 204, 204));
         manageRegisterRequestJButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -116,20 +138,15 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setText("Manage the requests");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel2.setText("Modify the organization ");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
-
         jLabel3.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 102));
         jLabel3.setText("Modify the user Account");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 102));
         jLabel4.setText("Modify the Employees");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -140,6 +157,16 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1.add(labAdmin);
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 820, 50));
+
+        Labtime.setBackground(new java.awt.Color(255, 255, 255));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 190, 40));
+
+        jLabel5.setFont(new java.awt.Font("Savoye LET", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel5.setText("Modify the organization ");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageUserAccountJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageUserAccountJButtonActionPerformed
@@ -178,11 +205,12 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labAdmin;
     private javax.swing.JButton manageEmpJButton;
