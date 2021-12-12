@@ -29,7 +29,7 @@ public class PatientDirectory {
         ArrayList<Patient> searchPatientDirectory = new ArrayList();
         for(Patient patient: patientList)
         {
-            if(patient.getPatientName().toLowerCase().startsWith(key.toLowerCase()))
+            if(patient.getpatientName().toLowerCase().startsWith(key.toLowerCase()))
             {
                 searchPatientDirectory.add(patient);
             }
@@ -39,7 +39,7 @@ public class PatientDirectory {
      
      public Patient createPtient(String name) {
         Patient pt = new Patient();
-        pt.setPatientName(name);
+        pt.setpatientName(name);
         patientList.add(pt);
         return pt;
     }

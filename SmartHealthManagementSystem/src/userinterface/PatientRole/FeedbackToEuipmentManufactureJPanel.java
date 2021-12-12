@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
 
@@ -333,35 +333,35 @@ public class FeedbackToEuipmentManufactureJPanel extends javax.swing.JPanel {
         
 
         if (jRadioButton1.isSelected()) {
-            request.setNotsatisfied1(jRadioButton1.getText());
+            request.setletOkay1(jRadioButton1.getText());
         } else if (jRadioButton2.isSelected()) {
-            request.setSatisfied1(jRadioButton2.getText());
+            request.setokay1(jRadioButton2.getText());
         } else if (jRadioButton3.isSelected()) {
-            request.setVerysatisfied1(jRadioButton3.getText());
+            request.sethowOkay1(jRadioButton3.getText());
         }
 
         if (jRadioButton4.isSelected()) {
-            request.setNotsatisfied2(jRadioButton4.getText());
+            request.setletOkay2(jRadioButton4.getText());
         } else if (jRadioButton5.isSelected()) {
-            request.setSatisfied2(jRadioButton5.getText());
+            request.setokay2(jRadioButton5.getText());
         } else if (jRadioButton6.isSelected()) {
-            request.setVerysatisfied2(jRadioButton6.getText());
+            request.sethowOkay2(jRadioButton6.getText());
         }
 
         if (jRadioButton7.isSelected()) {
-            request.setNotsatisfied3(jRadioButton7.getText());
+            request.setletOkay3(jRadioButton7.getText());
         } else if (jRadioButton8.isSelected()) {
-            request.setSatisfied3(jRadioButton8.getText());
+            request.setokay3(jRadioButton8.getText());
         } else if (jRadioButton9.isSelected()) {
-            request.setVerysatisfied3(jRadioButton9.getText());
+            request.sethowOkay3(jRadioButton9.getText());
         }
 
         if (jRadioButton12.isSelected()) {
-            request.setNotsatisfied4(jRadioButton12.getText());
+            request.setletOkay4(jRadioButton12.getText());
         } else if (jRadioButton10.isSelected()) {
-            request.setSatisfied4(jRadioButton10.getText());
+            request.setokay4(jRadioButton10.getText());
         } else if (jRadioButton11.isSelected()) {
-            request.setVerysatisfied4(jRadioButton11.getText());
+            request.sethowOkay4(jRadioButton11.getText());
         }
         
         Network targetNetwork = null;

@@ -38,13 +38,13 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
         
-        for(RegisterRequest registerRequest:ua.getRegisterRequestDirectory().getRegisterRequestList()){
+        for(RegisterRequest registerRequest:ua.getRegisterRequestDirectory().getregisterToRequestList()){
             Object[] row = new Object[5];
             row[0] = registerRequest;
             row[1] = registerRequest.getNetwork();
             row[2] = registerRequest.getEnterprise();
             row[3] = registerRequest.getOrganisation();
-            row[4] = registerRequest.getApproveOrNot();
+            row[4] = registerRequest.getisApprovedorNot();
              model.addRow(row);
             
         }
@@ -146,7 +146,7 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
         }else{
             RegisterRequest registerRequest = (RegisterRequest) jTable1.getValueAt(selectedRow, 0);
             
-            registerRequest.setApproveOrNot("Approved");
+            registerRequest.setisApprovedorNot("Approved");
             
             Organisation userOrganization = registerRequest.getOrganisation();
             UserAccount uaa = userOrganization.getUserAccountDirectory().createUserAccount();
@@ -157,9 +157,7 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
             registerRequest.setName(registerRequest.getName());
             uaa.setName(registerRequest.getName());
 
-//            if(registerRequest.getRole().toString().equals("Business.Role.PatientRole")){
-//                uaa.getPatient().setPatientName(registerRequest.getRegisterpatient().getPatientName());
-//            }
+
 
             
             JOptionPane.showMessageDialog(null, "Success");
@@ -175,7 +173,7 @@ public class ManageRegisterRequestJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please select one row");
         }else{
             RegisterRequest registerRequest = (RegisterRequest) jTable1.getValueAt(selectedRow, 0);
-            registerRequest.setApproveOrNot("delince");
+            registerRequest.setisApprovedorNot("delince");
             populateTable();
         }
         

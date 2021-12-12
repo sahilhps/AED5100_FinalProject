@@ -12,7 +12,7 @@ import Business.WorkQueue.WorkQueue;
 
 /**
  *
- * @author raunak
+ * @author Sahil Sonawane
  */
 public class UserAccount {
     
@@ -51,9 +51,7 @@ public class UserAccount {
 
     private RegisterRequestDirectory registerRequestDirectory;
     private String name;
-//    public UserAccount() {
-//        workQueue = new WorkQueue();
-//    }
+
     
     public UserAccount(String usr, String pass, Role r, String contactNo) {
         this.username = usr;

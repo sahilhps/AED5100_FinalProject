@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -73,15 +73,7 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
                     }
         }
 
-//        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-//            if (organization instanceof DrugSalesOrganization) {
-//                for (UserAccount ua : organization.getUserAccountDirectory().getUserAccountList()) {
-//                    if (ua.getRole() instanceof DrugSalesAdminRole) {
-//                        pharmacyJComboBox.addItem(ua);
-//                    }
-//                }
-//            }
-//        }
+
     }
     public void populateRequestTable(){
     DefaultTableModel model = (DefaultTableModel) drugRequestJTable.getModel();
@@ -90,10 +82,10 @@ public class MakeAndViewPrescriptionJPanel extends javax.swing.JPanel {
         for (WorkRequest request : userAccount.getWorkQueue().getWorkRequestList()){
             PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) request;
             Object[] row = new Object[4];
-            row[0] = patientDoctorWorkRequest.getDrugName();
-            row[1] = patientDoctorWorkRequest.getDrugQuantity();
+            row[0] = patientDoctorWorkRequest.getnameOfDrug();
+            row[1] = patientDoctorWorkRequest.getquantofDrug();
             row[2] = patientDoctorWorkRequest.getReceiveEnterprise();
-            row[3] = patientDoctorWorkRequest.getPreStatus();
+            row[3] = patientDoctorWorkRequest.getpreStat();
 
             
             model.addRow(row);

@@ -38,7 +38,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -86,11 +86,11 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
                 Record r = patientDoctorWorkRequest.getRecord();
                     Object[] row = new Object[5];                  
                     row[0] = r;
-                    row[1] = r.getNormalOrNot();
-                    row[2] = r.getTotalTime();
-                    row[3] = r.getNeedMoreExcerciseOrNot();
-                    String respondStatus = patientDoctorWorkRequest.getRespondStatus();
-                    row[4] = respondStatus == null ? "Waiting" : respondStatus;
+                    row[1] = r.getisNormal();
+                    row[2] = r.gettotTime();
+                    row[3] = r.getneedsToWorkout();
+                    String stattoRespond = patientDoctorWorkRequest.getstattoRespond();
+                    row[4] = stattoRespond == null ? "Waiting" : stattoRespond;
 
                     model.addRow(row);
                 
@@ -387,10 +387,10 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
             UserAccount doctor = (UserAccount) patient.getMydoctor();
             PatientDoctorWorkRequest request = new PatientDoctorWorkRequest();
             request.setDoctor(doctor);
-            request.setPatientName(userAccount.getName());
+            request.setpatientName(userAccount.getName());
             request.setDate();
-            request.setVsNormalorNot("Abnormal");
-            request.setFtNormalorNot("Need More Excercise");
+            request.setisisNormal("Abnormal");
+            request.setFtisNormal("Need More Excercise");
             
             Organisation org = null;
             for (Organisation organization : enterprise.getOrganisationDirectory().getOrganizationList()) {
@@ -422,9 +422,9 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
         }
         for (Record record : recordList) {
             vitalSignDataset.addValue(record.getStandTime(),"StandTime", record.getDate());
-            vitalSignDataset.addValue(record.getMoveTime(),"MoveTime", record.getDate());
-            vitalSignDataset.addValue(record.getExcerciseTime(),"ExcerciseTime", record.getDate());
-            vitalSignDataset.addValue(record.getTotalTime(),"TotalTime", record.getDate());
+            vitalSignDataset.addValue(record.getmovementClock(),"movementClock", record.getDate());
+            vitalSignDataset.addValue(record.getworkoutTime(),"workoutTime", record.getDate());
+            vitalSignDataset.addValue(record.gettotTime(),"totTime", record.getDate());
         }
         
         JFreeChart vitalSignChart= ChartFactory.createBarChart3D("Fitness Record Chart", "Time Stamp", "Time(mins)", vitalSignDataset, PlotOrientation.VERTICAL, true, false, false);

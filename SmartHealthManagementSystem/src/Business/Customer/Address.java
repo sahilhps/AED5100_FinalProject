@@ -32,12 +32,12 @@ public class Address {
         this.street = street;
     }
 
-    public int getApt() {
+    public int getapt() {
         return apt;
     }
 
-    public void setApt(int Apt) {
-        this.apt = Apt;
+    public void setapt(int apt) {
+        this.apt = apt;
     }
 
     public String getCity() {

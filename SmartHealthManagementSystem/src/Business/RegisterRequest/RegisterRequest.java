@@ -18,8 +18,8 @@ import Business.Role.Role;
  */
 public class RegisterRequest {
     public RegisterRequest(){
-        registerdoctor = new Employee();
-        registerpatient = new Patient ();
+        doctorRegistration = new Employee();
+        patientRegistration = new Patient ();
     }
 
     public String getUsername() {
@@ -38,12 +38,12 @@ public class RegisterRequest {
         this.password = password;
     }
 
-    public Employee getRegisterdoctor() {
-        return registerdoctor;
+    public Employee getdoctorRegistration() {
+        return doctorRegistration;
     }
 
-    public void setRegisterdoctor(Employee registerdoctor) {
-        this.registerdoctor = registerdoctor;
+    public void setdoctorRegistration(Employee doctorRegistration) {
+        this.doctorRegistration = doctorRegistration;
     }
 
     public String getName() {
@@ -62,20 +62,20 @@ public class RegisterRequest {
         this.Organisation = Organisation;
     }
 
-    public String getApproveOrNot() {
-        return approveOrNot;
+    public String getisApprovedorNot() {
+        return isApprovedorNot;
     }
 
-    public void setApproveOrNot(String approveOrNot) {
-        this.approveOrNot = approveOrNot;
+    public void setisApprovedorNot(String isApprovedorNot) {
+        this.isApprovedorNot = isApprovedorNot;
     }
 
-    public Patient getRegisterpatient() {
-        return registerpatient;
+    public Patient getpatientRegistration() {
+        return patientRegistration;
     }
 
-    public void setRegisterpatient(Patient registerpatient) {
-        this.registerpatient = registerpatient;
+    public void setpatientRegistration(Patient patientRegistration) {
+        this.patientRegistration = patientRegistration;
     }
 
     public Enterprise getEnterprise() {
@@ -103,11 +103,11 @@ public class RegisterRequest {
     }
     private String username;
     private String password;
-    private Employee registerdoctor;
+    private Employee doctorRegistration;
     private String name;
     private Organisation Organisation;
-    private String approveOrNot;
-    private Patient registerpatient;
+    private String isApprovedorNot;
+    private Patient patientRegistration;
     private Enterprise enterprise;
     private Network network;
     private Role role;

@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class RequestTestJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -101,7 +101,7 @@ public class RequestTestJPanel extends javax.swing.JPanel {
         //PatientDoctorWorkRequest request = new PatientDoctorWorkRequest();
         patientDoctorWorkRequest.setMessage(message);
         patientDoctorWorkRequest.setSender(userAccount);
-        patientDoctorWorkRequest.setLabStatus("Sent");
+        patientDoctorWorkRequest.setstatlab("Sent");
         
         
         Organisation org = null;

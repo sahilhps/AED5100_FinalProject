@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class RegisterJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -62,12 +62,8 @@ public class RegisterJPanel extends javax.swing.JPanel {
     private void populateOrganizationComboBox(Enterprise enterprise) {
         organizationJComboBox.removeAllItems();
         for (Organisation org : enterprise.getOrganisationDirectory().getOrganizationList()) {
-//            if (org instanceof LabOrganization) {
-//                return;
-//            }
-//            else{
-                organizationJComboBox.addItem(org);
-//            }
+            organizationJComboBox.addItem(org);
+
         }
     }
     
@@ -204,17 +200,17 @@ public class RegisterJPanel extends javax.swing.JPanel {
         registerRequest.setOrganisation((Organisation) organizationJComboBox.getSelectedItem());
         registerRequest.setRole((Role) roleJComboBox.getSelectedItem());
         if (registerRequest.getRole().toString().equals("Business.Role.DoctorRole")) {
-            registerRequest.getRegisterdoctor().setEmpName(registerRequest.getName());
+            registerRequest.getdoctorRegistration().setEmpName(registerRequest.getName());
         }
         else if (registerRequest.getRole().toString().equals("Business.Role.PatientRole")) {
-            registerRequest.getRegisterpatient().setPatientName(registerRequest.getName());
+            registerRequest.getpatientRegistration().setpatientName(registerRequest.getName());
         }
 
         Enterprise en = (Enterprise) enterpriseJComboBox.getSelectedItem();
 
         for (UserAccount ua : en.getUserAccountDirectory().getUserAccountList()) {
             if (ua.getRole().toString().equals("Business.Role.AdminRole")) {
-                ua.getRegisterRequestDirectory().getRegisterRequestList().add(registerRequest);
+                ua.getRegisterRequestDirectory().getregisterToRequestList().add(registerRequest);
             }
 
         }

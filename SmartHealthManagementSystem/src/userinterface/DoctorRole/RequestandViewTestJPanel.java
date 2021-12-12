@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class RequestandViewTestJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -53,8 +53,8 @@ public class RequestandViewTestJPanel extends javax.swing.JPanel {
             row[0] = patientDoctorWorkRequest;
             row[1] = patientDoctorWorkRequest.getMessage();
             row[2] = patientDoctorWorkRequest.getReceiver();
-            row[3] = patientDoctorWorkRequest.getLabStatus();
-            String result = ((PatientDoctorWorkRequest) request).getTestResult();
+            row[3] = patientDoctorWorkRequest.getstatlab();
+            String result = ((PatientDoctorWorkRequest) request).gettestingResult();
             row[4] = result == null ? "Waiting" : result;
             
             model.addRow(row);

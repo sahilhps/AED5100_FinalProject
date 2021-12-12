@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ViewAllReportsListJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -51,10 +51,10 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
                     row[0] = patientDoctorWorkRequest;
                     row[1] = patientDoctorWorkRequest.getSenderEnterprise();
                     row[2] = patientDoctorWorkRequest.getDoctor();
-                    row[3] = patientDoctorWorkRequest.getPatientName();
-                    row[4] = patientDoctorWorkRequest.getVsNormalorNot();
-                    row[5] = patientDoctorWorkRequest.getFtNormalorNot();
-                    row[6] = patientDoctorWorkRequest.getGovStatus() == null ? null : patientDoctorWorkRequest.getGovStatus();
+                    row[3] = patientDoctorWorkRequest.getpatientName();
+                    row[4] = patientDoctorWorkRequest.getisisNormal();
+                    row[5] = patientDoctorWorkRequest.getFtisNormal();
+                    row[6] = patientDoctorWorkRequest.getstatGov() == null ? null : patientDoctorWorkRequest.getstatGov();
                     model.addRow(row);
                 
             }
@@ -144,7 +144,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "please select one row");
         }
         PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) reportsListJTable.getValueAt(selectedRow, 0);     
-        patientDoctorWorkRequest.setGovStatus("Complete");
+        patientDoctorWorkRequest.setstatGov("Complete");
         populateTable();
     }//GEN-LAST:event_assignToMeJButtonActionPerformed
 

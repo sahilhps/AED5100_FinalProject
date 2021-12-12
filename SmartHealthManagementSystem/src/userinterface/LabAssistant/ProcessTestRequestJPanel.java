@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ProcessTestRequestJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
@@ -107,8 +107,8 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
 
     private void submitResultJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitResultJButtonActionPerformed
         // TODO add your handling code here:
-        request.setTestResult(jTextField1.getText());
-        request.setLabStatus("Complete");
+        request.settestingResult(jTextField1.getText());
+        request.setstatlab("Complete");
         JOptionPane.showMessageDialog(null, "Test conducted Succesfully");
     }//GEN-LAST:event_submitResultJButtonActionPerformed
 

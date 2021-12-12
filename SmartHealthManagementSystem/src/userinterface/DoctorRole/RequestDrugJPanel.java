@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class RequestDrugJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -58,7 +58,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
         requestTestJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        drugNameJTextField = new javax.swing.JTextField();
+        nameOfDrugJTextField = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
 
@@ -95,7 +95,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel2.setText("Quantity");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
-        add(drugNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 210, -1));
+        add(nameOfDrugJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 210, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -110,15 +110,11 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
         // TODO add your handling code here:
-//        
-//        String drugName = drugNameJTextField.getText();
-//        String drugQuantity = quantityJTextField.getText();
 
-        //PatientDoctorWorkRequest request = new PatientDoctorWorkRequest();
-        patientDoctorWorkRequest.setDrugName(drugNameJTextField.getText());
-        patientDoctorWorkRequest.setDrugQuantity(quantityJTextField.getText());
+        patientDoctorWorkRequest.setnameOfDrug(nameOfDrugJTextField.getText());
+        patientDoctorWorkRequest.setquantofDrug(quantityJTextField.getText());
         patientDoctorWorkRequest.setSender(userAccount);
-        patientDoctorWorkRequest.setPreStatus("Sent");
+        patientDoctorWorkRequest.setpreStat("Sent");
         
         Network targetNetwork = null;
 
@@ -169,7 +165,7 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
-    private javax.swing.JTextField drugNameJTextField;
+    private javax.swing.JTextField nameOfDrugJTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;

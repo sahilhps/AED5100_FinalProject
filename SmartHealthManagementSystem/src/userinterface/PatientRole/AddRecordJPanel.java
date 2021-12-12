@@ -22,7 +22,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class AddRecordJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -54,21 +54,21 @@ public class AddRecordJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        systolicBloodPressureJTextField = new javax.swing.JTextField();
-        weightInPoundsJTextField = new javax.swing.JTextField();
+        systalicBPJTextField = new javax.swing.JTextField();
+        weightJTextField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        respiratoryRateJTextField = new javax.swing.JTextField();
-        heartRateJTextField = new javax.swing.JTextField();
+        breatheRateJTextField = new javax.swing.JTextField();
+        heartrateJTextField = new javax.swing.JTextField();
         addJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         standTimeJTextField = new javax.swing.JTextField();
-        moveTimeJTextField = new javax.swing.JTextField();
-        excerciseTimeJTextField = new javax.swing.JTextField();
-        totalTimeJTextField = new javax.swing.JTextField();
+        movementClockJTextField = new javax.swing.JTextField();
+        workoutTimeJTextField = new javax.swing.JTextField();
+        totTimeJTextField = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -77,8 +77,8 @@ public class AddRecordJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(167, 221, 214));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(systolicBloodPressureJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 110, -1));
-        add(weightInPoundsJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 110, -1));
+        add(systalicBPJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 110, -1));
+        add(weightJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 110, -1));
 
         jLabel8.setBackground(new java.awt.Color(167, 221, 214));
         jLabel8.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
@@ -100,13 +100,13 @@ public class AddRecordJPanel extends javax.swing.JPanel {
         jLabel11.setText("Weight in pounds");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
 
-        respiratoryRateJTextField.addActionListener(new java.awt.event.ActionListener() {
+        breatheRateJTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                respiratoryRateJTextFieldActionPerformed(evt);
+                breatheRateJTextFieldActionPerformed(evt);
             }
         });
-        add(respiratoryRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 110, -1));
-        add(heartRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 110, -1));
+        add(breatheRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 110, -1));
+        add(heartrateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 110, -1));
 
         addJButton.setBackground(new java.awt.Color(0, 24, 91));
         addJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -141,12 +141,12 @@ public class AddRecordJPanel extends javax.swing.JPanel {
             }
         });
         add(standTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, 100, -1));
-        add(moveTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, 100, -1));
-        add(excerciseTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, 100, -1));
+        add(movementClockJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, 100, -1));
+        add(workoutTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, 100, -1));
 
-        totalTimeJTextField.setEditable(false);
-        totalTimeJTextField.setEnabled(false);
-        add(totalTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, 100, -1));
+        totTimeJTextField.setEditable(false);
+        totTimeJTextField.setEnabled(false);
+        add(totTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, 100, -1));
 
         jLabel15.setBackground(new java.awt.Color(167, 221, 214));
         jLabel15.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
@@ -174,9 +174,9 @@ public class AddRecordJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 560, 50));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void respiratoryRateJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respiratoryRateJTextFieldActionPerformed
+    private void breatheRateJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_breatheRateJTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_respiratoryRateJTextFieldActionPerformed
+    }//GEN-LAST:event_breatheRateJTextFieldActionPerformed
 
     private void standTimeJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_standTimeJTextFieldActionPerformed
         // TODO add your handling code here:
@@ -185,32 +185,32 @@ public class AddRecordJPanel extends javax.swing.JPanel {
     private void addJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJButtonActionPerformed
         // TODO add your handling code here:
         try{
-            float respiratoryRate = Float.parseFloat(respiratoryRateJTextField.getText());
-            float heartRate = Float.parseFloat(heartRateJTextField.getText());
-            float systolicBloodPressure = Float.parseFloat(systolicBloodPressureJTextField.getText());
-            float weightInPounds = Float.parseFloat(weightInPoundsJTextField.getText());
+            float breatheRate = Float.parseFloat(breatheRateJTextField.getText());
+            float heartrate = Float.parseFloat(heartrateJTextField.getText());
+            float systalicBP = Float.parseFloat(systalicBPJTextField.getText());
+            float weight = Float.parseFloat(weightJTextField.getText());
             int standTime = Integer.parseInt(standTimeJTextField.getText());
-            int moveTime= Integer.parseInt(moveTimeJTextField.getText());
-            int excerciseTimet = Integer.parseInt(excerciseTimeJTextField.getText());
-            //int totalTime = Integer.parseInt(totalTimeJTextField.getText());
+            int movementClock= Integer.parseInt(movementClockJTextField.getText());
+            int workoutTimet = Integer.parseInt(workoutTimeJTextField.getText());
+           
             
                     
             Date date = new Date();
-            Boolean normalOrNot = false;
-            Boolean needMoreExcerciseOrNot = false;
+            Boolean isNormal = false;
+            Boolean needsToWorkout = false;
             int age = patient.getAge();
             
-            int totalTime =  moveTime+excerciseTimet+standTime;
+            int totTime =  movementClock+workoutTimet+standTime;
 
             Record vs = patient.getRecordHistory().addRecord();
-            vs.setRespiratoryRate(respiratoryRate);
-            vs.setHeartRate(heartRate);
-            vs.setSystolicBloodPressure(systolicBloodPressure);
-            vs.setWeightInPounds(weightInPounds);
-            vs.setMoveTime(moveTime);
+            vs.setbreatheRate(breatheRate);
+            vs.setheartrate(heartrate);
+            vs.setsystalicBP(systalicBP);
+            vs.setweight(weight);
+            vs.setmovementClock(movementClock);
             vs.setStandTime(standTime);
-            vs.setExcerciseTime(excerciseTimet);
-            vs.setTotalTime(totalTime);
+            vs.setworkoutTime(workoutTimet);
+            vs.settotTime(totTime);
             vs.setDate(date);
 
 
@@ -229,70 +229,70 @@ public class AddRecordJPanel extends javax.swing.JPanel {
             
             if(age>=1&&age<=3)
             {
-                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=80 && heartRate<=130)&&(systolicBloodPressure>=80 && systolicBloodPressure<=110)&&(weightInPounds>=22 && weightInPounds<=31))
+                if((breatheRate>=20 && breatheRate<=30)&&(heartrate>=80 && heartrate<=130)&&(systalicBP>=80 && systalicBP<=110)&&(weight>=22 && weight<=31))
                 {
-                    normalOrNot = true;
+                    isNormal = true;
                 }
                 else
                 {
-                    normalOrNot = false;
+                    isNormal = false;
                 }
             }
             if(age>=4&&age<=5)
             {
-                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=80 && heartRate<=120)&&(systolicBloodPressure>=80 && systolicBloodPressure<=110)&&(weightInPounds>=31 && weightInPounds<=40))
+                if((breatheRate>=20 && breatheRate<=30)&&(heartrate>=80 && heartrate<=120)&&(systalicBP>=80 && systalicBP<=110)&&(weight>=31 && weight<=40))
                 {
-                    normalOrNot = true;
+                    isNormal = true;
                 }
                 else
                 {
-                    normalOrNot = false;
+                    isNormal = false;
                 }
             }
             if(age>=6&&age<=12)
             {
-                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=70 && heartRate<=110)&&(systolicBloodPressure>=80 && systolicBloodPressure<=120)&&(weightInPounds>=41 && weightInPounds<=92))
+                if((breatheRate>=20 && breatheRate<=30)&&(heartrate>=70 && heartrate<=110)&&(systalicBP>=80 && systalicBP<=120)&&(weight>=41 && weight<=92))
                 {
-                    normalOrNot = true;
+                    isNormal = true;
                 }
                 else
                 {
-                    normalOrNot = false;
+                    isNormal = false;
                 }
             }
             if(age>=13)
             {
-                if((respiratoryRate>=12 && respiratoryRate<=20)&&(heartRate>=55 && heartRate<=105)&&(systolicBloodPressure>=110 && systolicBloodPressure<=120)&&(weightInPounds>110))
+                if((breatheRate>=12 && breatheRate<=20)&&(heartrate>=55 && heartrate<=105)&&(systalicBP>=110 && systalicBP<=120)&&(weight>110))
                 {
-                    normalOrNot = true;
+                    isNormal = true;
                 }
                 else
                 {
-                    normalOrNot = false;
+                    isNormal = false;
                 }
             }
             
-            if(totalTime<=120){
-                needMoreExcerciseOrNot = true;
+            if(totTime<=120){
+                needsToWorkout = true;
             }
             else{
-                needMoreExcerciseOrNot = false;
+                needsToWorkout = false;
             }
 
-            if(normalOrNot == true)
+            if(isNormal == true)
             {
-                vs.setNormalOrNot("Normal");
+                vs.setisNormal("Normal");
             }
             else{
-                vs.setNormalOrNot("Abnormal");
+                vs.setisNormal("Abnormal");
             }
             
-            if(needMoreExcerciseOrNot == true)
+            if(needsToWorkout == true)
             {
-                vs.setNeedMoreExcerciseOrNot("Need More Excercise");
+                vs.setneedsToWorkout("Need More Excercise");
             }
             else{
-                vs.setNeedMoreExcerciseOrNot("Reach the Standard");
+                vs.setneedsToWorkout("Reach the Standard");
             }
             
 
@@ -306,95 +306,31 @@ public class AddRecordJPanel extends javax.swing.JPanel {
         }
         
     }//GEN-LAST:event_addJButtonActionPerformed
-//
-//    private String NormalOrNot(int age, Record record) {
-//        String normalOrNot = "Normal";
-//        
-//        float respiratoryRate = record.getRespiratoryRate();
-//        float heartRate = record.getHeartRate();
-//        float systolicBloodPressure = record.getSystolicBloodPressure();
-//        float weightInPounds = record.getWeightInPounds();
-//
-//            
-//            if(age>=1&&age<=3)
-//            {
-//                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=80 && heartRate<=130)&&(systolicBloodPressure>=80 && systolicBloodPressure<=110)&&(weightInPounds>=22 && weightInPounds<=31))
-//                {
-//                    normalOrNot = "Normal";
-//                }
-//                else
-//                {
-//                    normalOrNot = "Abnormal";
-//                }
-//            }
-//            if(age>=4&&age<=5)
-//            {
-//                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=80 && heartRate<=120)&&(systolicBloodPressure>=80 && systolicBloodPressure<=110)&&(weightInPounds>=31 && weightInPounds<=40))
-//                {
-//                    normalOrNot = "Normal";
-//                }
-//                else
-//                {
-//                    normalOrNot = "Abnormal";
-//                }
-//            }
-//            if(age>=6&&age<=12)
-//            {
-//                if((respiratoryRate>=20 && respiratoryRate<=30)&&(heartRate>=70 && heartRate<=110)&&(systolicBloodPressure>=80 && systolicBloodPressure<=120)&&(weightInPounds>=41 && weightInPounds<=92))
-//                {
-//                    normalOrNot = "Normal";
-//                }
-//                else
-//                {
-//                    normalOrNot = "Abnormal";
-//                }
-//            }
-//            if(age>=13)
-//            {
-//                if((respiratoryRate>=12 && respiratoryRate<=20)&&(heartRate>=55 && heartRate<=105)&&(systolicBloodPressure>=110 && systolicBloodPressure<=120)&&(weightInPounds>110))
-//                {
-//                    normalOrNot = "Normal";
-//                }
-//                else
-//                {
-//                    normalOrNot = "Abnormal";
-//                }
-//            }
-//            
-//            return normalOrNot;
-//    }
-//    
+
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         
-//        userProcessContainer.remove(this);
-//        Component[] componentArray = userProcessContainer.getComponents();
-//        Component component = componentArray[componentArray.length - 1];
-//        ManageMyVitalSignsAndFitnessRecordJPanel dwjp = (ManageMyVitalSignsAndFitnessRecordJPanel) component;
-//        dwjp.populateTable();
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void resetFields() {
-        respiratoryRateJTextField.setText("");
-        heartRateJTextField.setText("");
-        systolicBloodPressureJTextField.setText("");
-        weightInPoundsJTextField.setText("");
+        breatheRateJTextField.setText("");
+        heartrateJTextField.setText("");
+        systalicBPJTextField.setText("");
+        weightJTextField.setText("");
         standTimeJTextField.setText("");
-        moveTimeJTextField.setText("");
-        excerciseTimeJTextField.setText("");
-        totalTimeJTextField.setText("");       
+        movementClockJTextField.setText("");
+        workoutTimeJTextField.setText("");
+        totTimeJTextField.setText("");       
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addJButton;
     private javax.swing.JButton backJButton;
-    private javax.swing.JTextField excerciseTimeJTextField;
-    private javax.swing.JTextField heartRateJTextField;
+    private javax.swing.JTextField workoutTimeJTextField;
+    private javax.swing.JTextField heartrateJTextField;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -405,11 +341,11 @@ public class AddRecordJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField moveTimeJTextField;
-    private javax.swing.JTextField respiratoryRateJTextField;
+    private javax.swing.JTextField movementClockJTextField;
+    private javax.swing.JTextField breatheRateJTextField;
     private javax.swing.JTextField standTimeJTextField;
-    private javax.swing.JTextField systolicBloodPressureJTextField;
-    private javax.swing.JTextField totalTimeJTextField;
-    private javax.swing.JTextField weightInPoundsJTextField;
+    private javax.swing.JTextField systalicBPJTextField;
+    private javax.swing.JTextField totTimeJTextField;
+    private javax.swing.JTextField weightJTextField;
     // End of variables declaration//GEN-END:variables
 }

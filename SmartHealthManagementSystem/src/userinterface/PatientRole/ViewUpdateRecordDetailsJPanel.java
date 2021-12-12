@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dongyueli
+ * @author Sahil Sonawane
  */
 public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;    
@@ -43,14 +43,14 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
     }
 
     private void populateDetails() {
-        respiratoryRateJTextField.setText(String.valueOf(record.getRespiratoryRate()));
-        heartRateJTextField.setText(String.valueOf(record.getHeartRate()));
-        systolicBloodPressureJTextField.setText(String.valueOf(record.getSystolicBloodPressure()));
-        weightInPoundsJTextField.setText(String.valueOf(record.getWeightInPounds()));
+        breatheRateJTextField.setText(String.valueOf(record.getbreatheRate()));
+        heartrateJTextField.setText(String.valueOf(record.getheartrate()));
+        systalicBPJTextField.setText(String.valueOf(record.getsystalicBP()));
+        weightJTextField.setText(String.valueOf(record.getweight()));
         standTimeJTextField.setText(String.valueOf(record.getStandTime()));
-        moveTimeJTextField.setText(String.valueOf(record.getMoveTime()));
-        excerciseTimeJTextField.setText(String.valueOf(record.getExcerciseTime()));
-        totalTimeJTextField.setText(String.valueOf(record.getTotalTime()));
+        movementClockJTextField.setText(String.valueOf(record.getmovementClock()));
+        workoutTimeJTextField.setText(String.valueOf(record.getworkoutTime()));
+        totTimeJTextField.setText(String.valueOf(record.gettotTime()));
         
         
     }
@@ -64,10 +64,10 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel16 = new javax.swing.JLabel();
-        respiratoryRateJTextField = new javax.swing.JTextField();
-        heartRateJTextField = new javax.swing.JTextField();
-        systolicBloodPressureJTextField = new javax.swing.JTextField();
-        weightInPoundsJTextField = new javax.swing.JTextField();
+        breatheRateJTextField = new javax.swing.JTextField();
+        heartrateJTextField = new javax.swing.JTextField();
+        systalicBPJTextField = new javax.swing.JTextField();
+        weightJTextField = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -78,9 +78,9 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         standTimeJTextField = new javax.swing.JTextField();
-        moveTimeJTextField = new javax.swing.JTextField();
-        excerciseTimeJTextField = new javax.swing.JTextField();
-        totalTimeJTextField = new javax.swing.JTextField();
+        movementClockJTextField = new javax.swing.JTextField();
+        workoutTimeJTextField = new javax.swing.JTextField();
+        totTimeJTextField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
@@ -92,17 +92,17 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
         jLabel16.setText("Weight in pounds");
         add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, -1, -1));
 
-        respiratoryRateJTextField.setEnabled(false);
-        add(respiratoryRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 110, -1));
+        breatheRateJTextField.setEnabled(false);
+        add(breatheRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 110, -1));
 
-        heartRateJTextField.setEnabled(false);
-        add(heartRateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 110, -1));
+        heartrateJTextField.setEnabled(false);
+        add(heartrateJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 110, -1));
 
-        systolicBloodPressureJTextField.setEnabled(false);
-        add(systolicBloodPressureJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 110, -1));
+        systalicBPJTextField.setEnabled(false);
+        add(systalicBPJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 110, -1));
 
-        weightInPoundsJTextField.setEnabled(false);
-        add(weightInPoundsJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, -1));
+        weightJTextField.setEnabled(false);
+        add(weightJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, -1));
 
         jLabel13.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel13.setText("Respiratory rate");
@@ -164,15 +164,15 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
         });
         add(standTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 90, -1));
 
-        moveTimeJTextField.setEnabled(false);
-        add(moveTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 90, -1));
+        movementClockJTextField.setEnabled(false);
+        add(movementClockJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 90, -1));
 
-        excerciseTimeJTextField.setEnabled(false);
-        add(excerciseTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 90, -1));
+        workoutTimeJTextField.setEnabled(false);
+        add(workoutTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 90, -1));
 
-        totalTimeJTextField.setEditable(false);
-        totalTimeJTextField.setEnabled(false);
-        add(totalTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 90, -1));
+        totTimeJTextField.setEditable(false);
+        totTimeJTextField.setEnabled(false);
+        add(totTimeJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 90, -1));
 
         jLabel8.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel8.setText("Stand Time (mins)");
@@ -206,8 +206,8 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
-    private javax.swing.JTextField excerciseTimeJTextField;
-    private javax.swing.JTextField heartRateJTextField;
+    private javax.swing.JTextField workoutTimeJTextField;
+    private javax.swing.JTextField heartrateJTextField;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -218,13 +218,13 @@ public class ViewUpdateRecordDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField moveTimeJTextField;
-    private javax.swing.JTextField respiratoryRateJTextField;
+    private javax.swing.JTextField movementClockJTextField;
+    private javax.swing.JTextField breatheRateJTextField;
     private javax.swing.JButton saveJButton;
     private javax.swing.JTextField standTimeJTextField;
-    private javax.swing.JTextField systolicBloodPressureJTextField;
-    private javax.swing.JTextField totalTimeJTextField;
+    private javax.swing.JTextField systalicBPJTextField;
+    private javax.swing.JTextField totTimeJTextField;
     private javax.swing.JButton updateJButton;
-    private javax.swing.JTextField weightInPoundsJTextField;
+    private javax.swing.JTextField weightJTextField;
     // End of variables declaration//GEN-END:variables
 }
