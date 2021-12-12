@@ -33,26 +33,13 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CustomerServiceWorkAreaJPanel
      */
-    Timer timer;
+   
     public CustomerServiceWorkAreaJPanel() {
         initComponents();
 //                String d = Calendar.getInstance().getTime().toString();
 //        String e = java.time.LocalTime.now().toString();
 //        Labdate.setText(d);
         
-        ActionListener actionlistener = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-             Date date = new Date();
-        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
-        String time = timeformat.format(date);
-        Labtime.setText(time);   
-            }
-        };
-        
-        timer = new Timer(1000, actionlistener);
-        timer.setInitialDelay(0);
-        timer.start();
     }
      private JPanel userProcessContainer;
     private Enterprise enterprise;
@@ -64,8 +51,21 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CustomerServiceWorkAreaJPanel
      */
+    Timer timer;
     public CustomerServiceWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, CustomerServiceOrganisation organization, Enterprise enterprise, EcoSystem ecoSystem) {
         initComponents();
+                        ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
         this.organization = (CustomerServiceOrganisation)organization;

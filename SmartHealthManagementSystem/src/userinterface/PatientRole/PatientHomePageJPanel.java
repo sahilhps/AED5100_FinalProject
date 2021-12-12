@@ -10,7 +10,13 @@ import Business.Enterprise.Enterprise;
 import Business.Organisation.PatientOrganisation;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /**
  *
@@ -30,8 +36,21 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
     /**
      * Creates new form PatientHomePageJPanel
      */
+    Timer timer;
     public PatientHomePageJPanel(JPanel userProcessContainer,UserAccount userAccount, PatientOrganisation patientOrganization, Enterprise enterprise,EcoSystem ecoSystem) {
         initComponents();
+                ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         
         this.userProcessContainer = userProcessContainer;
         this.ecoSystem = ecoSystem;
@@ -61,6 +80,7 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(167, 221, 214));
 
@@ -125,6 +145,10 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
         jLabel11.setText("MY HOME PAGE");
         jPanel1.add(jLabel11);
 
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -149,19 +173,26 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createSequentialGroup()
                             .addGap(277, 277, 277)
                             .addComponent(manageProfileJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(71, 71, 71))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(patientNameLable)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(patientNameLable)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
                 .addComponent(manageProfileJButton)
                 .addGap(40, 40, 40)
                 .addComponent(manageVitalSignsAndFitnessRecordJButton)
@@ -207,6 +238,7 @@ public class PatientHomePageJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;

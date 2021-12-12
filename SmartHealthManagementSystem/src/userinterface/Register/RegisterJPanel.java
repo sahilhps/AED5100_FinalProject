@@ -16,8 +16,14 @@ import Business.RegisterRequest.RegisterRequest;
 import Business.Role.Role;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /**
  *
@@ -29,8 +35,21 @@ public class RegisterJPanel extends javax.swing.JPanel {
     /**
      * Creates new form RegisterJPanel
      */
+    Timer timer;
     public RegisterJPanel(JPanel userProcessContainer, EcoSystem ecoSystem) {
         initComponents();
+        ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.ecoSystem = ecoSystem;
         populateNetworkCombox();
@@ -101,99 +120,126 @@ public class RegisterJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         roleJComboBox = new javax.swing.JComboBox();
         submitJButton = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         btnAmbulance = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(250, 199, 151));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel2.setText("User Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 125, -1, -1));
-        add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 120, 113, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
+        add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 113, -1));
 
+        jLabel3.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel3.setText("Password");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 172, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, -1, -1));
 
         passwordJField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordJFieldActionPerformed(evt);
             }
         });
-        add(passwordJField, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 167, 113, -1));
+        add(passwordJField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 113, -1));
 
+        jLabel4.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel4.setText("Name");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 218, -1, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 213, 113, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 200, -1, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 113, -1));
 
+        jLabel5.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel5.setText("Please Select your State");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 125, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
 
+        networkJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
         networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 networkJComboBoxActionPerformed(evt);
             }
         });
-        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 121, 268, -1));
+        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 268, -1));
 
+        jLabel6.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel6.setText("Please Select your Hospital ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 172, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, -1, -1));
 
+        enterpriseJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
         enterpriseJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 enterpriseJComboBoxActionPerformed(evt);
             }
         });
-        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 168, 268, -1));
+        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, 268, -1));
 
+        jLabel7.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
         jLabel7.setText("Please Select your Department");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 218, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, -1, -1));
 
+        organizationJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
         organizationJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 214, 268, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, 268, -1));
 
-        jLabel8.setText("Please Select your Role");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 263, -1, -1));
+        jLabel8.setFont(new java.awt.Font("Raanana", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel8.setText("In case of emergency, call 911");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 580, -1, 20));
 
+        roleJComboBox.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
         roleJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " " }));
         roleJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 roleJComboBoxActionPerformed(evt);
             }
         });
-        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 259, 268, -1));
+        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 268, -1));
 
+        submitJButton.setBackground(new java.awt.Color(0, 24, 91));
+        submitJButton.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("Submit");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 339, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 550, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel9.setText("Register");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(347, 73, 120, -1));
-
-        jLabel10.setBackground(new java.awt.Color(255, 255, 204));
-        jLabel10.setFont(new java.awt.Font("Savoye LET", 1, 36)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 0, 204));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Wearable Device Health Management System");
-        jLabel10.setOpaque(true);
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 12, -1, 55));
-
+        btnAmbulance.setBackground(new java.awt.Color(0, 24, 91));
+        btnAmbulance.setFont(new java.awt.Font("American Typewriter", 0, 13)); // NOI18N
+        btnAmbulance.setForeground(new java.awt.Color(255, 255, 255));
         btnAmbulance.setText("Call Ambulance");
         btnAmbulance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAmbulanceActionPerformed(evt);
             }
         });
-        add(btnAmbulance, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, -1, -1));
+        add(btnAmbulance, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 600, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 24, 91));
+
+        jLabel12.setBackground(new java.awt.Color(0, 24, 91));
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 30)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("REGISTRATION");
+        jPanel1.add(jLabel12);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 560, 60));
+
+        jLabel9.setFont(new java.awt.Font("Savoye LET", 0, 30)); // NOI18N
+        jLabel9.setText("Please Select your Role");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, -1, -1));
+
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 170, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void passwordJFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJFieldActionPerformed
@@ -279,9 +325,10 @@ public class RegisterJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JButton btnAmbulance;
     private javax.swing.JComboBox enterpriseJComboBox;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -290,6 +337,7 @@ public class RegisterJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField nameJTextField;
     private javax.swing.JComboBox networkJComboBox;
     private javax.swing.JComboBox organizationJComboBox;

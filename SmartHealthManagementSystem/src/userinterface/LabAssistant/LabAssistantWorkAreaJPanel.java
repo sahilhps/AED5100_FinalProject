@@ -11,8 +11,14 @@ import Business.UserAccount.UserAccount;
 import Business.WorkQueue.PatientDoctorWorkRequest;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -34,8 +40,21 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssisstantWorkAreaJPanel
      */
+    Timer timer;
     public LabAssistantWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, LabOrganisation organization, Enterprise enterprise) {
         initComponents();
+        ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
         this.organization = (LabOrganisation)organization;
@@ -78,6 +97,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         refreshJButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 238, 170));
 
@@ -148,6 +168,10 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setText("LAB ASSISTANT");
         jPanel1.add(jLabel13);
 
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -171,13 +195,19 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110)
+                .addGap(26, 26, 26)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -228,6 +258,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JButton assignToMeJButton;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;

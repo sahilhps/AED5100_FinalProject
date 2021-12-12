@@ -11,8 +11,14 @@ import Business.Organisation.DrugSalesOrganisation;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.PatientDoctorWorkRequest;
 import Business.WorkQueue.WorkRequest;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -35,8 +41,21 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DrugSalesWorkAreaJPanel
      */
+    Timer timer;
     public DrugSalesWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, DrugSalesOrganisation organization, Enterprise enterprise, EcoSystem ecoSystem) {
         initComponents();
+                ActionListener actionlistener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        Date date = new Date();
+        DateFormat timeformat = new SimpleDateFormat("HH:mm:ss");
+        String time = timeformat.format(date);
+        Labtime.setText(time);
+            }
+        };
+        timer = new Timer(1000, actionlistener);
+        timer.setInitialDelay(0);
+        timer.start();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
         this.organization = (DrugSalesOrganisation)organization;
@@ -81,6 +100,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
+        Labtime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(239, 147, 147));
 
@@ -131,6 +151,10 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setText("DRUG SALES ADMIN");
         jPanel1.add(jLabel13);
 
+        Labtime.setBackground(new java.awt.Color(0, 24, 91));
+        Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        Labtime.setForeground(new java.awt.Color(0, 24, 91));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -145,7 +169,10 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(248, 248, 248))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(150, 150, 150))))
+                        .addGap(150, 150, 150))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -157,7 +184,9 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 320, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(Labtime, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
@@ -198,6 +227,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Labtime;
     private javax.swing.JTable drugRequestJTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
