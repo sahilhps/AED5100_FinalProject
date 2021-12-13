@@ -127,7 +127,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         drugRequestJTable.setSelectionForeground(new java.awt.Color(255, 0, 51));
         jScrollPane2.setViewportView(drugRequestJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 930, 200));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 940, 240));
 
         jButton2.setBackground(new java.awt.Color(0, 24, 91));
         jButton2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -138,7 +138,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 750, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 750, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 24, 91));
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -149,7 +149,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 750, 110, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 750, 110, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -167,7 +167,7 @@ public class DrugSalesWorkAreaJPanel extends javax.swing.JPanel {
         add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, 170, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/drugs.jpg")); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 890));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1120, 900));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

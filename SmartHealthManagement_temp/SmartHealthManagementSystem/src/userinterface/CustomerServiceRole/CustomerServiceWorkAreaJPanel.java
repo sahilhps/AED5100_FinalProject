@@ -187,10 +187,10 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setText("CUSTOMER SERVICES");
         jPanel1.add(jLabel13);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 34, 475, 55));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 475, 55));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/CS.jpg")); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 990, 850));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 880));
     }// </editor-fold>//GEN-END:initComponents
 
     private void viewDetailsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsJButtonActionPerformed

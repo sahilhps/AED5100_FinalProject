@@ -91,7 +91,7 @@ public class ProcessTestRequestJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 620, 60));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/labfinal.jpeg")); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 770));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 770));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
