@@ -245,7 +245,7 @@ public class ViewFeedbackDetailsJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 610, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/CS.jpg")); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1070, 890));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1100, 910));
     }// </editor-fold>//GEN-END:initComponents
 
     private void ns1jRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ns1jRadioButtonActionPerformed

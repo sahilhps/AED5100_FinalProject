@@ -76,6 +76,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(182, 145, 145));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -102,7 +103,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(reportsListJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 770, 190));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 770, 190));
 
         assignToMeJButton.setBackground(new java.awt.Color(0, 24, 91));
         assignToMeJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -113,7 +114,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
                 assignToMeJButtonActionPerformed(evt);
             }
         });
-        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, -1, -1));
+        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 580, -1, -1));
 
         backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -124,7 +125,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 730, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -134,7 +135,10 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
         jLabel14.setText("REPORTS");
         jPanel1.add(jLabel14);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 770, 50));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 770, 50));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kal Bugrara/hhs.jpg")); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, 1050));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeJButtonActionPerformed
@@ -159,6 +163,7 @@ public class ViewAllReportsListJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignToMeJButton;
     private javax.swing.JButton backJButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

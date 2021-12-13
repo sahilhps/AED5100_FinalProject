@@ -184,13 +184,13 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
         jLabel13.setBackground(new java.awt.Color(0, 51, 153));
         jLabel13.setFont(new java.awt.Font("Raanana", 1, 36)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("CUSTOMER SERVICES");
+        jLabel13.setText("SUPPORT SERVICES");
         jPanel1.add(jLabel13);
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 475, 55));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/CS.jpg")); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 880));
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kal Bugrara/AED5100_FinalProject/SmartHealthManagement_temp/CS.jpg")); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1100, 970));
     }// </editor-fold>//GEN-END:initComponents
 
     private void viewDetailsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsJButtonActionPerformed

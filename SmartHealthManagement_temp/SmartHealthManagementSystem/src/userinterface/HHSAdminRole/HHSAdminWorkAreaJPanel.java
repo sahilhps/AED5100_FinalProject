@@ -73,6 +73,7 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         Labtime = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(182, 145, 145));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -85,7 +86,7 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel14.setText("HEALTH AND HUMAN SERVICES ADMIN");
         jPanel1.add(jLabel14);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 43, 800, 63));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 800, 63));
 
         jButton1.setBackground(new java.awt.Color(182, 145, 145));
         jButton1.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -95,12 +96,15 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 213, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, 213, -1));
 
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
-        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 170, 40));
+        add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 160, 170, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kal Bugrara/hhs.jpg")); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -115,6 +119,7 @@ public class HHSAdminWorkAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Labtime;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
