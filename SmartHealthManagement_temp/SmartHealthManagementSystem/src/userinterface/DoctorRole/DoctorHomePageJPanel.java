@@ -84,7 +84,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                     PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) request;
                     if (patientDoctorWorkRequest.getDoctor()== userAccount) {
                     Object[] row = new Object[7];
-                    row[0] = patientDoctorWorkRequest;
+                    row[0] = patientDoctorWorkRequest.getDate();
                     row[1] = patientDoctorWorkRequest.getpatientName();
                     row[2] = patientDoctorWorkRequest.getisisNormal();
                     row[3] = patientDoctorWorkRequest.getFtisNormal();

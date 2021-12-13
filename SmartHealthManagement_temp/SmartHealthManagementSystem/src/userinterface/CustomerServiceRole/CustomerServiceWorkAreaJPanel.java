@@ -86,7 +86,7 @@ public class CustomerServiceWorkAreaJPanel extends javax.swing.JPanel {
                 
                     Object[] row = new Object[4];
                     
-                    row[0] = feedbackWorkRequest;
+                    row[0] = feedbackWorkRequest.getDate();
                     row[1] = feedbackWorkRequest.getSender().getPatient().getpatientName();
                     row[2] = feedbackWorkRequest.getReceiver() == null ? null : feedbackWorkRequest.getReceiver().getName();
                     row[3] = feedbackWorkRequest.getStatus();
