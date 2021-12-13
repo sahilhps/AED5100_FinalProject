@@ -37,7 +37,7 @@ public class GifUIJPanel extends javax.swing.JPanel {
 
         labgif.setBackground(new java.awt.Color(255, 204, 204));
         labgif.setForeground(new java.awt.Color(255, 255, 255));
-        labgif.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/SmartHealthManagementSystem/Logo.gif")); // NOI18N
+        labgif.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/SmartHealthManagementSystem/SmartHealthManagementSystem/Logo.gif")); // NOI18N
         labgif.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 204), 10));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

@@ -54,7 +54,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/mitishah/Kaam wala folder/chalnabro/SmartHealthManagementSystem/Logo.gif"/>
+          <Image iconType="2" name="/Users/mitishah/Kaam wala folder/chalnabro/SmartHealthManagementSystem/SmartHealthManagementSystem/Logo.gif"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
