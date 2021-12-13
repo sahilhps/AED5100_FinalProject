@@ -85,7 +85,7 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
                 PatientDoctorWorkRequest patientDoctorWorkRequest = (PatientDoctorWorkRequest) request;
                 Record r = patientDoctorWorkRequest.getRecord();
                     Object[] row = new Object[5];                  
-                    row[0] = r;
+                    row[0] = r.getDate();
                     row[1] = r.getisNormal();
                     row[2] = r.gettotTime();
                     row[3] = r.getneedsToWorkout();
@@ -202,7 +202,6 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
         });
         jScrollPane3.setViewportView(viewVitalSignsJTable1);
         if (viewVitalSignsJTable1.getColumnModel().getColumnCount() > 0) {
-            viewVitalSignsJTable1.getColumnModel().getColumn(0).setResizable(false);
             viewVitalSignsJTable1.getColumnModel().getColumn(1).setResizable(false);
             viewVitalSignsJTable1.getColumnModel().getColumn(2).setResizable(false);
             viewVitalSignsJTable1.getColumnModel().getColumn(3).setResizable(false);
