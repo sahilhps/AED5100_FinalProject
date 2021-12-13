@@ -297,19 +297,26 @@ public class RegisterJPanel extends javax.swing.JPanel {
 
     private void organizationJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationJComboBoxActionPerformed
         // TODO add your handling code here:
-        Organisation org = (Organisation) organizationJComboBox.getSelectedItem();
+         Organisation org = (Organisation) organizationJComboBox.getSelectedItem();
         if (org != null) {
             populateRoleComboBox(org);
         }
 //        String a = 
-        if (organizationJComboBox.getSelectedItem().toString() == "Patient Department"){
-            btnAmbulance.setEnabled(true);
+
+        try {
+            if (organizationJComboBox.getSelectedItem().toString() == "Patient Department") {
+                btnAmbulance.setEnabled(true);
 //            System.out.println(organizationJComboBox.getSelectedItem());
+            } //        else if(organizationJComboBox.getSelectedItem() == null){
+            //            System.out.println("Patient Department not Found");
+            //        }
+            else {
+                btnAmbulance.setEnabled(false);
+            }
         }
-        else{
-            btnAmbulance.setEnabled(false);
+        catch(NullPointerException e){
+            System.out.println("Null Pointer Exception");
         }
-//        System.out.println(org);
     }//GEN-LAST:event_organizationJComboBoxActionPerformed
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
