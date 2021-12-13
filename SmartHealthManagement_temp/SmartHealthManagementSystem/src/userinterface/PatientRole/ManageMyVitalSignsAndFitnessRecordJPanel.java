@@ -315,6 +315,7 @@ public class ManageMyVitalSignsAndFitnessRecordJPanel extends javax.swing.JPanel
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
         // TODO add your handling code here:
+        //vv
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
