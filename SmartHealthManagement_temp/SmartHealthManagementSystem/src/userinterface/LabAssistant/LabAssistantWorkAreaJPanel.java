@@ -130,12 +130,11 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        testRequestJTable.setColumnSelectionAllowed(false);
         testRequestJTable.setSelectionBackground(new java.awt.Color(102, 255, 102));
         testRequestJTable.setSelectionForeground(new java.awt.Color(204, 0, 0));
         jScrollPane1.setViewportView(testRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 880, 160));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 880, 160));
 
         assignToMeJButton.setBackground(new java.awt.Color(0, 24, 91));
         assignToMeJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -146,7 +145,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 assignToMeJButtonActionPerformed(evt);
             }
         });
-        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 580, -1, -1));
+        add(assignToMeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -167,7 +166,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 580, 110, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 580, 110, -1));
 
         refreshJButton.setBackground(new java.awt.Color(0, 24, 91));
         refreshJButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -178,11 +177,11 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 580, 90, 30));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 580, 90, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/labfinal.jpeg")); // NOI18N
         jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1020, 920));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1110, 920));
 
         Labtime.setBackground(new java.awt.Color(0, 24, 91));
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N

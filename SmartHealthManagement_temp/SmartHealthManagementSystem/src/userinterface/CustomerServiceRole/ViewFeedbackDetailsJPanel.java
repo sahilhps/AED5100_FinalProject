@@ -216,12 +216,12 @@ public class ViewFeedbackDetailsJPanel extends javax.swing.JPanel {
         feedbackJTextArea.setRows(5);
         jScrollPane1.setViewportView(feedbackJTextArea);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 422, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 422, 150));
 
         jLabel3.setFont(new java.awt.Font("Raanana", 3, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 102));
         jLabel3.setText("Customer Comments:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, -1, -1));
 
         backJButton.setBackground(new java.awt.Color(0, 24, 91));
         backJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -232,7 +232,7 @@ public class ViewFeedbackDetailsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 580, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 660, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 24, 91));
 
@@ -242,10 +242,10 @@ public class ViewFeedbackDetailsJPanel extends javax.swing.JPanel {
         jLabel13.setText("VIEW FEEDBACK");
         jPanel1.add(jLabel13);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 610, 50));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 610, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/CS.jpg")); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 980, 790));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1070, 890));
     }// </editor-fold>//GEN-END:initComponents
 
     private void ns1jRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ns1jRadioButtonActionPerformed
