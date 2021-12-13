@@ -108,7 +108,6 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
 
         searchBoxJTextField = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        viewDetails = new javax.swing.JButton();
         respondJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
@@ -139,16 +138,6 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, -1, -1));
 
-        viewDetails.setBackground(new java.awt.Color(230, 196, 146));
-        viewDetails.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
-        viewDetails.setText("View Details");
-        viewDetails.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewDetailsActionPerformed(evt);
-            }
-        });
-        add(viewDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 693, -1, -1));
-
         respondJButton.setBackground(new java.awt.Color(230, 196, 146));
         respondJButton.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
         respondJButton.setText("Respond To Patient");
@@ -157,7 +146,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 respondJButtonActionPerformed(evt);
             }
         });
-        add(respondJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 693, 163, -1));
+        add(respondJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 700, 163, -1));
 
         jLabel2.setBackground(new java.awt.Color(0, 153, 153));
         jLabel2.setFont(new java.awt.Font("American Typewriter", 0, 14)); // NOI18N
@@ -184,7 +173,7 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(501, 693, 180, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 700, 180, -1));
 
         viewVitalSignsJTable.setBackground(new java.awt.Color(230, 196, 146));
         viewVitalSignsJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -275,18 +264,12 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
         Labtime.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         Labtime.setForeground(new java.awt.Color(0, 24, 91));
         add(Labtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 170, 40));
-
-        Labdr.setIcon(new javax.swing.ImageIcon("/Users/mitishah/Kaam wala folder/chalnabro/Doctorfinal.jpg")); // NOI18N
         add(Labdr, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1030, 960));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void viewDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_viewDetailsActionPerformed
 
     private void respondJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respondJButtonActionPerformed
         // TODO add your handling code here:
@@ -415,7 +398,6 @@ public class DoctorHomePageJPanel extends javax.swing.JPanel {
     private javax.swing.JButton reportToGovernmentHHSDJButton;
     private javax.swing.JButton respondJButton;
     private javax.swing.JTextField searchBoxJTextField;
-    private javax.swing.JButton viewDetails;
     private javax.swing.JTable viewVitalSignsJTable;
     // End of variables declaration//GEN-END:variables
 }

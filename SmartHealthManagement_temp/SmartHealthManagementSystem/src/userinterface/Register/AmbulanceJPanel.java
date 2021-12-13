@@ -5,7 +5,9 @@
  */
 package userinterface.Register;
 
+import Business.Ambulance.Ambulance;
 import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -122,6 +124,12 @@ public class AmbulanceJPanel extends javax.swing.JPanel {
 
     private void btnbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbookActionPerformed
         // TODO add your handling code here:
+        Ambulance ab = new Ambulance();
+        ab.setInjury(txtInjury.getText());
+        ab.setLocation(txtlocation.getText());
+        JOptionPane.showMessageDialog(null, "Your Ambulance will arrive on  "+ jDateChooser1.getDate() + " for your "
+                + " assisstance at " + ab.getLocation() + "  for your injury " + ab.getInjury());
+
     }//GEN-LAST:event_btnbookActionPerformed
 
 
